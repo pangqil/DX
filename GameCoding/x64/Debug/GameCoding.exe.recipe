@@ -2,12 +2,12 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\jaehyuck\Downloads\GameCoding_1주차+(최종코드)\Binaries\GameCoding.exe</FullPath>
+      <FullPath>C:\Users\jaehyuck\Documents\DX11F\DX\Binaries\GameCoding.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
-      <FullPath>C:\Users\jaehyuck\Downloads\GameCoding_1주차+(최종코드)\Binaries\Default.cso</FullPath>
+      <FullPath>C:\Users\jaehyuck\Documents\DX11F\DX\Binaries\Default.cso</FullPath>
     </ContentFile>
   </ContentFiles>
   <SatelliteDlls />
