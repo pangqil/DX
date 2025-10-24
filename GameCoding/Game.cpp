@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Game.h"
 
+#include <ctime>
 #include <string>
 
 Game::Game()
@@ -354,4 +355,7 @@ void Game::LoadShaderFromFile(const wstring& path, const string& name, const str
 		nullptr);
 
 	CHECK(hr);
+	
+	
+
 }

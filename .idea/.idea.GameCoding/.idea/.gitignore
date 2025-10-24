@@ -3,9 +3,9 @@
 /workspace.xml
 # Rider에서 무시된 파일
 /modules.xml
-/.idea.GameCoding.iml
 /contentModel.xml
 /projectSettingsUpdater.xml
+/.idea.GameCoding.iml
 # 에디터 기반 HTTP 클라이언트 요청
 /httpRequests/
 # Datasource local storage ignored files
