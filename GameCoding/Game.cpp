@@ -16,8 +16,7 @@ Game::~Game()
 void Game::Init(HWND hwnd)
 {
 	_hwnd = hwnd;
-	_width = GWinSizeX;
-	_height = GWinSizeY;
+	_grpahics=make_shared<Graphics>(hwnd);
 
 	CreateDeviceAndSwapChain();
 	CreateRenderTargetView();
@@ -42,22 +41,32 @@ void Game::Update()
 	//_transformData.offset.x += 0.003f;
 	//_transformData.offset.y += 0.003f;
 
+	Matrix matScale=Matrix::CreateScale(_localScale);
+	Matrix matRotation=Matrix::CreateRotationX(_localRotation.x);
+	matRotation*=Matrix::CreateRotationY(_localRotation.y);
+	matRotation*=Matrix::CreateRotationZ(_localRotation.z);
+	Matrix matTranslation=Matrix::CreateTranslation(_localPosition);
+
+	Matrix matWorld=matScale*matRotation* matTranslation;//SRT
+	_transformData.matWorld=matWorld;
+	
 	D3D11_MAPPED_SUBRESOURCE subResource;
 	ZeroMemory(&subResource, sizeof(subResource));
-	
-	_deviceContext->Map(_constantBuffer.Get(), 0, D3D11_MAP_WRITE_DISCARD, 0, &subResource);
+
+	_graphics->getDeviceContext()->Map(_constantBuffer.Get(), 0, D3D11_MAP_WRITE_DISCARD, 0, &subResource);
 	::memcpy(subResource.pData, &_transformData, sizeof(_transformData));
-	_deviceContext->Unmap(_constantBuffer.Get(), 0);
+	_graphics->getDeviceContext()->Unmap(_constantBuffer.Get(), 0);
 }
 
 void Game::Render()
 {
-	RenderBegin();
+	_graphics->RenderBegin();
 
 	{
 		uint32 stride = sizeof(Vertex);
 		uint32 offset = 0;
-		
+
+		auto _deviceContext=_graphics->GetDivceContext();
 		// IA
 		_deviceContext->IASetVertexBuffers(0, 1, _vertexBuffer.GetAddressOf(), &stride, &offset); 
 		_deviceContext->IASetIndexBuffer(_indexBuffer.Get(), DXGI_FORMAT_R32_UINT, 0);
@@ -84,7 +93,7 @@ void Game::Render()
 		_deviceContext->DrawIndexed(_indices.size(), 0, 0);
 	}
 
-	RenderEnd();//호출하게 되면 swapchain써서 후면->전면 고속 복사하고 화면에 그려주기.
+	_graphics->RenderEnd();//호출하게 되면 swapchain써서 후면->전면 고속 복사하고 화면에 그려주기.
 }
 
 void Game::RenderBegin()//OM(Output Merge)
