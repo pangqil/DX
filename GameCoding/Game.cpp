@@ -17,8 +17,9 @@ Game::~Game()
 void Game::Init(HWND hwnd)
 {
 	_hwnd = hwnd;
-	_grpahics=make_shared<Graphics>(hwnd);
-
+	//_grpahics=make_shared<Graphics>(hwnd);
+	_graphics=
+	
 	CreateDeviceAndSwapChain();
 	CreateRenderTargetView();
 	SetViewport();

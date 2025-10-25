@@ -1,10 +1,13 @@
-#include <pch.h>
+#include "pch.h"
 #include "graphics.h"
 
 Graphics::Graphics(HWND hwnd){
     _hwnd=hwnd;
-    _width=GWinSizeX;
-    _height=GWinSizeY;
+    
+    CreateDeviceAndSwapChain();
+    CreateRenderTargetView();
+    SetViewport();
+        
 }
 
 Graphics::~Graphics()
@@ -28,8 +31,8 @@ void Graphics::CreateDeviceAndSwapChain()
     DXGI_SWAP_CHAIN_DESC desc;
     ZeroMemory(&desc, sizeof(desc));
     {
-        desc.BufferDesc.Width = _width;
-        desc.BufferDesc.Height = _height;
+        desc.BufferDesc.Width = GWinSizeX;
+        desc.BufferDesc.Height = GWinSizeY;
         desc.BufferDesc.RefreshRate.Numerator = 60;
         desc.BufferDesc.RefreshRate.Denominator = 1;
         desc.BufferDesc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
@@ -79,8 +82,9 @@ void Graphics::SetViewport()
 {//Rasterizer단계에서 만들어줘.
     _viewport.TopLeftX = 0.f;
     _viewport.TopLeftY = 0.f;
-    _viewport.Width = static_cast<float>(_width);
-    _viewport.Height = static_cast<float>(_height);
+    _viewport.Width = static_cast<float>(GWinSizeX);
+    _viewport.Height = static_cast<float>(GWinSizeY);
     _viewport.MinDepth = 0.f;
     _viewport.MaxDepth = 1.f;
 }
+

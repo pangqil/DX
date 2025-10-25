@@ -14,9 +14,9 @@ public:
 	void Render();
 
 private:
-	void CreateDeviceAndSwapChain();
-	void CreateRenderTargetView();
-	void SetViewport();
+	// void CreateDeviceAndSwapChain();
+	// void CreateRenderTargetView();
+	// void SetViewport();
 
 private:
 	void CreateGeometry();
