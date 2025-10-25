@@ -1,6 +1,6 @@
 #pragma once
-#include <string>
 
+#include "Pipeline/graphics.h"
 
 class Game
 {
@@ -33,6 +33,10 @@ private:
 
 	void LoadShaderFromFile(const wstring& path, const string& name, const string& version, ComPtr<ID3DBlob>& blob);
 
+private:
+	HWND _hwnd;
+
+	shared_ptr<Graphics> _graphics;
 private:
 	// Geometry
 	vector<Vertex> _vertices;//처음엔 CPU에 있음
