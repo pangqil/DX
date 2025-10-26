@@ -39,11 +39,14 @@ private:
 	shared_ptr<Graphics> _graphics;
 private:
 	// Geometry
-	vector<Vertex> _vertices;//처음엔 CPU에 있음
-	ComPtr<ID3D11Buffer> _vertexBuffer = nullptr;//GPU로 가기 위해 버퍼로 변환 필요
+	// vector<Vertex> _vertices;//처음엔 CPU에 있음
+	// shared_ptr<VertexBuffer> _vertexBuffer = nullptr;//GPU로 가기 위해 버퍼로 변환 필요
+
+	shared_ptr<Geometry<VertexTextureData>> _geometry;
+
 	vector<uint32> _indices;
-	ComPtr<ID3D11Buffer> _indexBuffer = nullptr;
-	ComPtr<ID3D11InputLayout> _inputLayout = nullptr;//쉐이더(GPU)로 보낼 VertexBuffer에 대한 구조체 설정
+	shared_ptr<IndexBuffer> _indexBuffer = nullptr;
+	shared_ptr<InputLayout> _inputLayout = nullptr;//쉐이더(GPU)로 보낼 VertexBuffer에 대한 구조체 설정
 
 	// VS
 	ComPtr<ID3D11VertexShader> _vertexShader = nullptr;

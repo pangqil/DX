@@ -40,3 +40,9 @@ using namespace Microsoft::WRL;
 
 //Engine
 #include "Pipeline/graphics.h"
+#include "Pipeline/01. InputAssembler/IndexBuffer.h"
+#include "Pipeline/01. InputAssembler/VertexBuffer.h"
+#include "Pipeline/01. InputAssembler/InputLayout.h"
+#include "Pipeline/00. Geometry/Geometry.h"
+#include "Pipeline/00. Geometry/GeometryHelper.h"
+#include "Pipeline/00. Geometry/VertexData.h"

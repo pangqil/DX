@@ -145,6 +145,12 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameCoding.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Pipeline\00. Geometry\Geometry.h" />
+    <ClInclude Include="Pipeline\00. Geometry\GeometryHelper.h" />
+    <ClInclude Include="Pipeline\00. Geometry\VertexData.h" />
+    <ClInclude Include="Pipeline\01. InputAssembler\IndexBuffer.h" />
+    <ClInclude Include="Pipeline\01. InputAssembler\InputLayout.h" />
+    <ClInclude Include="Pipeline\01. InputAssembler\VertexBuffer.h" />
     <ClInclude Include="Pipeline\graphics.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SimpleMath\SimpleMath.h" />
@@ -161,6 +167,12 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Pipeline\00. Geometry\Geometry.cpp" />
+    <ClCompile Include="Pipeline\00. Geometry\GeometryHelper.cpp" />
+    <ClCompile Include="Pipeline\00. Geometry\VertexData.cpp" />
+    <ClCompile Include="Pipeline\01. InputAssembler\IndexBuffer.cpp" />
+    <ClCompile Include="Pipeline\01. InputAssembler\InputLayout.cpp" />
+    <ClCompile Include="Pipeline\01. InputAssembler\VertexBuffer.cpp" />
     <ClCompile Include="Pipeline\graphics.cpp" />
     <ClCompile Include="SimpleMath\SimpleMath.cpp" />
   </ItemGroup>
@@ -185,8 +197,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="01. Main\" />
-    <Folder Include="Pipeline\00. Geometry\" />
-    <Folder Include="Pipeline\01. InputAssembler\" />
     <Folder Include="Pipeline\02. VertexShader\" />
     <Folder Include="Pipeline\03. Rasterizer\" />
     <Folder Include="Pipeline\04. PixelShader\" />
