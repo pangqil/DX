@@ -46,3 +46,6 @@ using namespace Microsoft::WRL;
 #include "Pipeline/00. Geometry/Geometry.h"
 #include "Pipeline/00. Geometry/GeometryHelper.h"
 #include "Pipeline/00. Geometry/VertexData.h"
+#include "Pipeline/02. VertexShader/Shader.h"
+#include "Pipeline/02. VertexShader/ConstantBuffer.h"
+#include "Pipeline/04. PixelShader/Texture.h"

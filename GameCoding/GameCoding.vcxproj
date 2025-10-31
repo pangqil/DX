@@ -151,6 +151,9 @@
     <ClInclude Include="Pipeline\01. InputAssembler\IndexBuffer.h" />
     <ClInclude Include="Pipeline\01. InputAssembler\InputLayout.h" />
     <ClInclude Include="Pipeline\01. InputAssembler\VertexBuffer.h" />
+    <ClInclude Include="Pipeline\02. VertexShader\ConstantBuffer.h" />
+    <ClInclude Include="Pipeline\02. VertexShader\Shader.h" />
+    <ClInclude Include="Pipeline\04. PixelShader\Texture.h" />
     <ClInclude Include="Pipeline\graphics.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SimpleMath\SimpleMath.h" />
@@ -173,6 +176,9 @@
     <ClCompile Include="Pipeline\01. InputAssembler\IndexBuffer.cpp" />
     <ClCompile Include="Pipeline\01. InputAssembler\InputLayout.cpp" />
     <ClCompile Include="Pipeline\01. InputAssembler\VertexBuffer.cpp" />
+    <ClCompile Include="Pipeline\02. VertexShader\ConstantBuffer.cpp" />
+    <ClCompile Include="Pipeline\02. VertexShader\Shader.cpp" />
+    <ClCompile Include="Pipeline\04. PixelShader\Texture.cpp" />
     <ClCompile Include="Pipeline\graphics.cpp" />
     <ClCompile Include="SimpleMath\SimpleMath.cpp" />
   </ItemGroup>
@@ -197,9 +203,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="01. Main\" />
-    <Folder Include="Pipeline\02. VertexShader\" />
     <Folder Include="Pipeline\03. Rasterizer\" />
-    <Folder Include="Pipeline\04. PixelShader\" />
     <Folder Include="Pipeline\05. OutputMerger\" />
   </ItemGroup>
   <ItemGroup>

@@ -19,8 +19,12 @@ void Game::Init(HWND hwnd)
 	_vertexBuffer = make_shared<VertexBuffer>(_graphics->GetDevice());
 	_indexBuffer = make_shared<IndexBuffer>(_graphics->GetDevice());
 	_inputLayout = make_shared<InputLayout>(_graphics->GetDevice());
-	//_geometry = make_shared<Geometry<VertexTextureData>>();
-
+	_geometry = make_shared<Geometry<VertexTextureData>>();
+	_vertexShader=make_shared<VertexShader>(_graphics->GetDevice());
+	_pixelShader=make_shared<PixelShader>(_graphics->GetDevice());
+	_constantBuffer=make_shared<ConstantBuffer>(_graphics->GetDevice(), _graphics->GetDeviceContext());
+	_texture1=make_shared<Texture>(_graphics->GetDevice());
+	
 	CreateGeometry();
 	CreateVS();
 	CreateInputLayout();
@@ -30,12 +34,13 @@ void Game::Init(HWND hwnd)
 	CreateSamplerState();
 	CreateBlendState();
 
-	CreateSRV();
-	CreateConstantBuffer();
+	_texture1->Create(L"Skeleton.png");
+	
+	_constantBuffer->Create();
 }
 
 void Game::Update()
-{
+
 	// Scale Rotation Translation
 	//_transformData.offset.x += 0.003f;
 	//_transformData.offset.y += 0.003f;
@@ -48,14 +53,9 @@ void Game::Update()
 
 	Matrix matWorld=matScale*matRotation* matTranslation;//SRT
 	_transformData.matWorld=matWorld;
-	
-	D3D11_MAPPED_SUBRESOURCE subResource;
-	ZeroMemory(&subResource, sizeof(subResource));
 
-	_graphics->GetDeviceContext()->Map(_constantBuffer.Get(), 0, D3D11_MAP_WRITE_DISCARD, 0, &subResource);
-	::memcpy(subResource.pData, &_transformData, sizeof(_transformData));
-	_graphics->GetDeviceContext()->Unmap(_constantBuffer.Get(), 0);
-}
+	_constantBuffer->CopyData(_transformData);
+ }
 
 void Game::Render()
 {
@@ -67,29 +67,29 @@ void Game::Render()
 
 		auto _deviceContext=_graphics->GetDeviceContext();
 		// IA
-		_deviceContext->IASetVertexBuffers(0, 1, _vertexBuffer.GetAddressOf(), &stride, &offset); 
-		_deviceContext->IASetIndexBuffer(_indexBuffer.Get(), DXGI_FORMAT_R32_UINT, 0);
-		_deviceContext->IASetInputLayout(_inputLayout.Get());
+		_deviceContext->IASetVertexBuffers(0, 1, _vertexBuffer->GetComPtr().GetAddressOf(), &stride, &offset); 
+		_deviceContext->IASetIndexBuffer(_indexBuffer->GetComPtr().Get(), DXGI_FORMAT_R32_UINT, 0);
+		_deviceContext->IASetInputLayout(_inputLayout->GetComPtr().Get());
 		_deviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
 
 		// VS
-		_deviceContext->VSSetShader(_vertexShader.Get(), nullptr, 0);
-		_deviceContext->VSSetConstantBuffers(0, 1, _constantBuffer.GetAddressOf());
+		_deviceContext->VSSetShader(_vertexShader->GetComPtr().Get(), nullptr, 0);
+		_deviceContext->VSSetConstantBuffers(0, 1, _constantBuffer->GetComPtr().GetAddressOf());
 
 		// RS
 		_deviceContext->RSSetState(_rasterizerState.Get());
 
 		// PS
-		_deviceContext->PSSetShader(_pixelShader.Get(), nullptr, 0);
-		_deviceContext->PSSetShaderResources(0, 1, _shaderResourveView.GetAddressOf());
-		_deviceContext->PSSetShaderResources(1, 1, _shaderResourveView2.GetAddressOf());
+		_deviceContext->PSSetShader(_pixelShader->GetComPtr().Get(), nullptr, 0);
+		_deviceContext->PSSetShaderResources(0, 1, _texture1->GetComPtr().GetAddressOf());
+		// _deviceContext->PSSetShaderResources(1, 1, _shaderResourveView2.GetAddressOf());
 		_deviceContext->PSSetSamplers(0, 1, _samplerState.GetAddressOf());
 
 		// OM
 		_deviceContext->OMSetBlendState(_blendState.Get(), nullptr, 0xFFFFFFFF);
 
 		//_deviceContext->Draw(_vertices.size(), 0);
-		_deviceContext->DrawIndexed(_indices.size(), 0, 0);
+		_deviceContext->DrawIndexed(_geometry->GetIndexCount(), 0, 0);
 	}
 
 	_graphics->RenderEnd();//호출하게 되면 swapchain써서 후면->전면 고속 복사하고 화면에 그려주기.
@@ -124,16 +124,18 @@ void Game::CreateInputLayout()//IA단계는 VertexBuffer안에 있는 내용(VS_
 		{ "POSITION", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 0, D3D11_INPUT_PER_VERTEX_DATA, 0 },
 		{ "TEXCOORD", 0, DXGI_FORMAT_R32G32_FLOAT, 0, 12, D3D11_INPUT_PER_VERTEX_DATA, 0 },
 	};
-	_inputLayout->Create(layout, _vsBlob);
+	_inputLayout->Create(layout, _vertexShader->GetBlob());
 
 	const int32 count = sizeof(layout) / sizeof(D3D11_INPUT_ELEMENT_DESC);
 }//vertex shader를 컴파일하면 blob가 결과물로 나온다.
 
 void Game::CreateVS()
 {
-	LoadShaderFromFile(L"Default.hlsl", "VS", "vs_5_0", _vsBlob);
- 	HRESULT hr = _graphics->GetDevice()->CreateVertexShader(_vsBlob->GetBufferPointer(), _vsBlob->GetBufferSize(), nullptr, _vertexShader.GetAddressOf());
+	LoadShaderFromFile(L"Default.hlsl", "VS", "vs_5_0", _Blob);
+ 	HRESULT hr = _graphics->GetDevice()->CreateVertexShader(_Blob->GetBufferPointer(), _vsBlob->GetBufferSize(), nullptr, _vertexShader.GetAddressOf());
 	CHECK(hr);
+
+	_vertexShader->Create(L"Default.hlsl", "VS", "vs_5_0");
 }
 
 void Game::CreatePS()
@@ -141,6 +143,10 @@ void Game::CreatePS()
 	LoadShaderFromFile(L"Default.hlsl", "PS", "ps_5_0", _psBlob);
 	HRESULT hr = _graphics->GetDevice()->CreatePixelShader(_psBlob->GetBufferPointer(), _psBlob->GetBufferSize(), nullptr, _pixelShader.GetAddressOf());
 	CHECK(hr);
+
+	
+	_pixelShader->Create(L"Default.hlsl", "PS", "ps_5_0");
+	
 }
 
 void Game::CreateRasterizerState()
@@ -213,18 +219,6 @@ void Game::CreateSRV()
 	CHECK(hr);
 }
 
-void Game::CreateConstantBuffer()
-{
-	D3D11_BUFFER_DESC desc;
-	ZeroMemory(&desc, sizeof(desc));
-	desc.Usage = D3D11_USAGE_DYNAMIC; // CPU_Write + GPU_Read -> Index처럼 Immutable만 하면 Read만 된다
-	desc.BindFlags = D3D11_BIND_CONSTANT_BUFFER;
-	desc.ByteWidth = sizeof(TransformData);
-	desc.CPUAccessFlags = D3D11_CPU_ACCESS_WRITE;
-
-	HRESULT hr = _graphics->GetDevice()->CreateBuffer(&desc, nullptr, _constantBuffer.GetAddressOf());
-	CHECK(hr);
-}
 
 void Game::LoadShaderFromFile(const wstring& path, const string& name, const string& version, ComPtr<ID3DBlob>& blob)
 {

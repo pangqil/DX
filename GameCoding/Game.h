@@ -31,7 +31,6 @@ private:
 	void CreateBlendState();
 	void CreateSRV();
 
-	void CreateConstantBuffer();
 
 	void LoadShaderFromFile(const wstring& path, const string& name, const string& version, ComPtr<ID3DBlob>& blob);
 
@@ -40,37 +39,21 @@ private:
 	//width, height=0; -> init의 GWinsizeX, Bufferdesc.height, setviewport
 	shared_ptr<Graphics> _graphics;
 
-	//Removed code
-
-	//Device&Swapchain
-	// ComPtr<ID3D11Device> _device = nullptr;
-	// ComPtr<ID3D11DeviceContext> _deviceContext = nullptr;
-	// ComPtr<IDXGISwapChain> _swapChain = nullptr;
-
-	//RTV, Misc
-	
-	// Geometry1
-	// vector<Vertex> _vertices;//처음엔 CPU에 있음
-	// shared_ptr<VertexBuffer> _vertexBuffer = nullptr;//GPU로 가기 위해 버퍼로 변환 필요
-
 private:
-	// Geometry2
+	//Geometry
 	shared_ptr<Geometry<VertexTextureData>> _geometry;
-	vector<uint32> _indices;
-	shared_ptr<IndexBuffer> _indexBuffer = nullptr;
-	shared_ptr<InputLayout> _inputLayout = nullptr;//쉐이더(GPU)로 보낼 VertexBuffer에 대한 구조체 설정
+	shared_ptr<VertexBuffer> _vertexBuffer;
+	shared_ptr<IndexBuffer> _indexBuffer;
+	shared_ptr<InputLayout> _inputLayout;//쉐이더(GPU)로 보낼 VertexBuffer에 대한 구조체 설정
 
-	// VS
-	ComPtr<ID3D11VertexShader> _vertexShader = nullptr;
-	ComPtr<ID3DBlob> _vsBlob = nullptr;
-
-	// RS
+	ComPtr<VertexShader> _vertexShader = nullptr;
 	ComPtr<ID3D11RasterizerState> _rasterizerState = nullptr;
+	ComPtr<PixelShader> _pixelShader = nullptr;
 
-	// PS
-	ComPtr<ID3D11PixelShader> _pixelShader = nullptr;
-	ComPtr<ID3DBlob> _psBlob = nullptr;
-
+	shared_ptr<Texture> _texture1;
+	shared_ptr<Texture> _texture2;
+	
+	
 	// SRV
 	ComPtr<ID3D11ShaderResourceView> _shaderResourveView = nullptr;
 	ComPtr<ID3D11ShaderResourceView> _shaderResourveView2 = nullptr;
@@ -81,7 +64,7 @@ private:
 private:
 	// SRT
 	TransformData _transformData;
-	ComPtr<ID3D11Buffer> _constantBuffer;//여러 물체의 Position, Rotation을 설정하는 변수
+	shared_ptr<ConstantBuffer<TransformData>> _constantBuffer;
 
 	Vec3 _localPosition ={0.f,0.f,0.f};
 	Vec3 _localRotation ={0.f,0.f,0.f};
