@@ -13,6 +13,8 @@ public:
 	void Update();
 	void Render();
 
+	//RenderBegin();
+	//RenderEnd();
 private:
 	// void CreateDeviceAndSwapChain();
 	// void CreateRenderTargetView();
@@ -35,15 +37,25 @@ private:
 
 private:
 	HWND _hwnd;
-
+	//width, height=0; -> init의 GWinsizeX, Bufferdesc.height, setviewport
 	shared_ptr<Graphics> _graphics;
-private:
-	// Geometry
+
+	//Removed code
+
+	//Device&Swapchain
+	// ComPtr<ID3D11Device> _device = nullptr;
+	// ComPtr<ID3D11DeviceContext> _deviceContext = nullptr;
+	// ComPtr<IDXGISwapChain> _swapChain = nullptr;
+
+	//RTV, Misc
+	
+	// Geometry1
 	// vector<Vertex> _vertices;//처음엔 CPU에 있음
 	// shared_ptr<VertexBuffer> _vertexBuffer = nullptr;//GPU로 가기 위해 버퍼로 변환 필요
 
+private:
+	// Geometry2
 	shared_ptr<Geometry<VertexTextureData>> _geometry;
-
 	vector<uint32> _indices;
 	shared_ptr<IndexBuffer> _indexBuffer = nullptr;
 	shared_ptr<InputLayout> _inputLayout = nullptr;//쉐이더(GPU)로 보낼 VertexBuffer에 대한 구조체 설정

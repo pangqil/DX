@@ -11,7 +11,7 @@ public:
 	uint32 GetOffset() { return _offset; }
 	uint32 GetCount() { return _count; }
 
-	void Create(const vector<uint32>& indices);
+	void Create(const vector<uint32>& indices);//인덱스벡터를 버퍼로 만듦.
 
 private:
 	ComPtr<ID3D11Device> _device;

@@ -202,6 +202,9 @@
     <Folder Include="Pipeline\04. PixelShader\" />
     <Folder Include="Pipeline\05. OutputMerger\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pipeline\order.md" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

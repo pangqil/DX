@@ -1,7 +1,7 @@
 #pragma once
 
 template<typename T>
-class Geometry
+class Geometry//재사용할 indicies와 vertex의 묶음 vertices로 관리.
 {
 public:
 	Geometry() {} 

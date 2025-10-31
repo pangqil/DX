@@ -12,7 +12,7 @@ public:
     ComPtr<ID3D11Device> GetDevice() {return _device;}
     ComPtr<ID3D11DeviceContext> GetDeviceContext(){return _deviceContext;}
     
-private:
+private://Swapchain, RTV, Viewport
     void CreateDeviceAndSwapChain();
     void CreateRenderTargetView();
     void SetViewport();

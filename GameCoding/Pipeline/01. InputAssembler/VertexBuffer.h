@@ -1,7 +1,7 @@
 #pragma once
 
 class VertexBuffer
-{
+{//gpu 메모리에 buffer를 싣기.
 public:
 	VertexBuffer(ComPtr<ID3D11Device> device);
 	~VertexBuffer();
@@ -12,7 +12,7 @@ public:
 	uint32 GetCount() { return _count; }
 
 	template<typename T>
-	void Create(const vector<T>& vertices)
+	void Create(const vector<T>& vertices)//CPU의 Vertex를 GPU가 읽을 수 있는 버퍼 객체로 만듦.
 	{
 		_stride = sizeof(T);
 		_count = static_cast<uint32>(vertices.size());
@@ -28,7 +28,7 @@ public:
 		data.pSysMem = vertices.data();
 
 		HRESULT hr = _device->CreateBuffer(&desc, &data, _vertexBuffer.GetAddressOf());
-		CHECK(hr);
+		CHECK(hr);//버퍼를 디바이스(GPU메모리)에 업로드함.
 	}
 
 private:
