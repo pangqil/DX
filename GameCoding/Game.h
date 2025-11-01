@@ -46,21 +46,20 @@ private:
 	shared_ptr<IndexBuffer> _indexBuffer;
 	shared_ptr<InputLayout> _inputLayout;//쉐이더(GPU)로 보낼 VertexBuffer에 대한 구조체 설정
 
-	ComPtr<VertexShader> _vertexShader = nullptr;
-	ComPtr<ID3D11RasterizerState> _rasterizerState = nullptr;
-	ComPtr<PixelShader> _pixelShader = nullptr;
+	shared_ptr<VertexShader> _vertexShader = nullptr;
+	shared_ptr<PixelShader> _pixelShader = nullptr;
 
 	shared_ptr<Texture> _texture1;
 	shared_ptr<Texture> _texture2;
-	
+
+	shared_ptr<RasterizerState> _rasterizerState;
+	shared_ptr<SamplerState> _samplerState;
+	shared_ptr<BlendState> _blendState;
 	
 	// SRV
 	ComPtr<ID3D11ShaderResourceView> _shaderResourveView = nullptr;
 	ComPtr<ID3D11ShaderResourceView> _shaderResourveView2 = nullptr;
 
-	ComPtr<ID3D11SamplerState> _samplerState = nullptr;
-	ComPtr<ID3D11BlendState> _blendState = nullptr;
-	// [ CPU<->RAM ] [GPU<->VRAM]
 private:
 	// SRT
 	TransformData _transformData;

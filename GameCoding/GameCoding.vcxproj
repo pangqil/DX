@@ -153,8 +153,12 @@
     <ClInclude Include="Pipeline\01. InputAssembler\VertexBuffer.h" />
     <ClInclude Include="Pipeline\02. VertexShader\ConstantBuffer.h" />
     <ClInclude Include="Pipeline\02. VertexShader\Shader.h" />
+    <ClInclude Include="Pipeline\03. Rasterizer\BlendState.h" />
+    <ClInclude Include="Pipeline\03. Rasterizer\RasterizerState.h" />
+    <ClInclude Include="Pipeline\03. Rasterizer\SamplerState.h" />
     <ClInclude Include="Pipeline\04. PixelShader\Texture.h" />
     <ClInclude Include="Pipeline\graphics.h" />
+    <ClInclude Include="Pipeline\Pipeline.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SimpleMath\SimpleMath.h" />
     <ClInclude Include="SimpleMath\SimpleMath.inl" />
@@ -178,8 +182,12 @@
     <ClCompile Include="Pipeline\01. InputAssembler\VertexBuffer.cpp" />
     <ClCompile Include="Pipeline\02. VertexShader\ConstantBuffer.cpp" />
     <ClCompile Include="Pipeline\02. VertexShader\Shader.cpp" />
+    <ClCompile Include="Pipeline\03. Rasterizer\BlendState.cpp" />
+    <ClCompile Include="Pipeline\03. Rasterizer\RasterizerState.cpp" />
+    <ClCompile Include="Pipeline\03. Rasterizer\SamplerState.cpp" />
     <ClCompile Include="Pipeline\04. PixelShader\Texture.cpp" />
     <ClCompile Include="Pipeline\graphics.cpp" />
+    <ClCompile Include="Pipeline\Pipeline.cpp" />
     <ClCompile Include="SimpleMath\SimpleMath.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -203,7 +211,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="01. Main\" />
-    <Folder Include="Pipeline\03. Rasterizer\" />
     <Folder Include="Pipeline\05. OutputMerger\" />
   </ItemGroup>
   <ItemGroup>
