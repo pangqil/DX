@@ -52,4 +52,5 @@ using namespace Microsoft::WRL;
 #include "Pipeline/03. Rasterizer/RasterizerState.h"
 #include "Pipeline/03. Rasterizer/SamplerState.h"
 #include "Pipeline/04. PixelShader/Texture.h"
+#include "Pipeline/Pipeline.h"
 

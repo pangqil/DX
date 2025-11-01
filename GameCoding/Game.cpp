@@ -24,6 +24,7 @@ void Game::Init(HWND hwnd)
 	_pixelShader=make_shared<PixelShader>(_graphics->GetDevice());
 	_constantBuffer=make_shared<ConstantBuffer>(_graphics->GetDevice(), _graphics->GetDeviceContext());
 	_texture1=make_shared<Texture>(_graphics->GetDevice());
+	_pipeline
 	
 	CreateGeometry();
 	CreateVS();
@@ -62,34 +63,20 @@ void Game::Render()
 	_graphics->RenderBegin();
 
 	{
-		uint32 stride = sizeof(VertexTextureData);
-		uint32 offset = 0;
+		PipelineInfo info;
+		info.inputLayout=_inputLayout;
+		info.vertexShader=_vertexShader;
+		info.pixelShader=_pixelShader;
+		info.rasterizerState=_rasterizerState;
+		info.blendState=_blendState;
 
-		auto _deviceContext=_graphics->GetDeviceContext();
-		// IA
-		_deviceContext->IASetVertexBuffers(0, 1, _vertexBuffer->GetComPtr().GetAddressOf(), &stride, &offset); 
-		_deviceContext->IASetIndexBuffer(_indexBuffer->GetComPtr().Get(), DXGI_FORMAT_R32_UINT, 0);
-		_deviceContext->IASetInputLayout(_inputLayout->GetComPtr().Get());
-		_deviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
+		_pipeline->UpdatePipeline(info);
 
-		// VS
-		_deviceContext->VSSetShader(_vertexShader->GetComPtr().Get(), nullptr, 0);
-		_deviceContext->VSSetConstantBuffers(0, 1, _constantBuffer->GetComPtr().GetAddressOf());
-
-		// RS
-		_deviceContext->RSSetState(_rasterizerState.Get());
-
-		// PS
-		_deviceContext->PSSetShader(_pixelShader->GetComPtr().Get(), nullptr, 0);
-		_deviceContext->PSSetShaderResources(0, 1, _texture1->GetComPtr().GetAddressOf());
-		// _deviceContext->PSSetShaderResources(1, 1, _shaderResourveView2.GetAddressOf());
-		_deviceContext->PSSetSamplers(0, 1, _samplerState.GetAddressOf());
-
-		// OM
-		_deviceContext->OMSetBlendState(_blendState.Get(), nullptr, 0xFFFFFFFF);
-
-		//_deviceContext->Draw(_vertices.size(), 0);
-		_deviceContext->DrawIndexed(_geometry->GetIndexCount(), 0, 0);
+		_pipeline->SetVertexBuffer(_vertexBuffer);
+		_pipeline->SetIndexBuffer(_indexBuffer);
+		_pipeline->SetConstantBuffer(0,SS_VertexShader, _constantBuffer);
+		_pipeline->SetTexture(0,SS_PixelShader, _texture1);
+		_pipeline->DrawIndexed(_geometry->GetIndexCount(),0,0);
 	}
 
 	_graphics->RenderEnd();//호출하게 되면 swapchain써서 후면->전면 고속 복사하고 화면에 그려주기.

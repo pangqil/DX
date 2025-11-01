@@ -55,6 +55,8 @@ private:
 	shared_ptr<RasterizerState> _rasterizerState;
 	shared_ptr<SamplerState> _samplerState;
 	shared_ptr<BlendState> _blendState;
+
+	shared_ptr<Pipeline> _pipeline;
 	
 	// SRV
 	ComPtr<ID3D11ShaderResourceView> _shaderResourveView = nullptr;
