@@ -27,4 +27,5 @@ private:
     TransformData _transformdata;
     shared_ptr<ConstantBuffer<TransformData>> _constantBuffer;
 
+    shared_ptr<Transform> _transform=make_shared<Transform>();
 };

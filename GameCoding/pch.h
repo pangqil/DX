@@ -1,5 +1,7 @@
 #pragma once
 
+#define _XM_NO_INTRINSICS_
+
 #include "Types.h"
 #include "Values.h"
 #include "Struct.h"
@@ -53,4 +55,6 @@ using namespace Microsoft::WRL;
 #include "Pipeline/03. Rasterizer/SamplerState.h"
 #include "Pipeline/04. PixelShader/Texture.h"
 #include "Pipeline/Pipeline.h"
+#include "GameObject/Transform.h"
+
 
