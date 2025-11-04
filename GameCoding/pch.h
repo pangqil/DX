@@ -10,6 +10,7 @@
 #include <memory>
 #include <iostream>
 #include <vector>
+#include <array>
 #include <list>
 #include <map>
 #include <unordered_map>
@@ -56,5 +57,6 @@ using namespace Microsoft::WRL;
 #include "Pipeline/04. PixelShader/Texture.h"
 #include "Pipeline/Pipeline.h"
 #include "GameObject/Transform.h"
+#include "GameObject/Monobehaviour.h"
 
 

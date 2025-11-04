@@ -6,7 +6,19 @@ public:
     GameObject(ComPtr<ID3D11Device> device, ComPtr<ID3D11DeviceContext> devicecontext);
     ~GameObject();
 
+    void Awake();
+    void Start();
     void Update();
+    void LateUpdate();
+    void FixedUpdate();
+
+    shared_ptr<Component> GetFixedComponent(ComponentType type);
+    shared_ptr<Transform> GetTransform();
+    shared_ptr<Transform> GetOrAddTransform();
+    void AddComponent(shared_ptr<Component> component);
+    
+    // void Update();
+    
     void Render(shared_ptr<Pipeline> pipeline);
 private:
     ComPtr<ID3D11Device> _device;
@@ -24,8 +36,12 @@ private:
     shared_ptr<SamplerState> _samplerState;
     shared_ptr<BlendState> _blendState;
 private:
-    TransformData _transformdata;
+    TransformData _transformData;
     shared_ptr<ConstantBuffer<TransformData>> _constantBuffer;
 
     shared_ptr<Transform> _transform=make_shared<Transform>();
+
+protected:
+    array<shared_ptr<Component>, FIXED_COMPONENT_COUNT> _components;
+    vector<shared_ptr<MonoBehaviour>> _scripts;
 };
