@@ -1,6 +1,10 @@
 #pragma once
 
+<<<<<<< Updated upstream
 class GameObject:public enable_shared_from_this<GameObject>
+=======
+class GameObject : public enable_shared_from_this<GameObject>
+>>>>>>> Stashed changes
 {
 public:
     GameObject(ComPtr<ID3D11Device> device, ComPtr<ID3D11DeviceContext> devicecontext);
