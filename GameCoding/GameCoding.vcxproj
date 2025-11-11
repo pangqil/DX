@@ -147,7 +147,7 @@
     <ClInclude Include="GameObject\Camera.h" />
     <ClInclude Include="GameObject\Component.h" />
     <ClInclude Include="GameObject\GameObject.h" />
-    <ClInclude Include="GameObject\Monobehaviour.h" />
+    <ClInclude Include="GameObject\MonoBehaviour.h" />
     <ClInclude Include="GameObject\Transform.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Pipeline\00. Geometry\Geometry.h" />
@@ -178,7 +178,7 @@
     <ClCompile Include="GameObject\Camera.cpp" />
     <ClCompile Include="GameObject\Component.cpp" />
     <ClCompile Include="GameObject\GameObject.cpp" />
-    <ClCompile Include="GameObject\Monobehaviour.cpp" />
+    <ClCompile Include="GameObject\MonoBehaviour.cpp" />
     <ClCompile Include="GameObject\Transform.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

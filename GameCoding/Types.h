@@ -1,4 +1,5 @@
 #pragma once
+#include <windows.h>
 #include "DirectXMath.h"
 #include "SimpleMath/SimpleMath.h"
 
@@ -18,3 +19,4 @@ using Vec2 = DirectX::XMFLOAT2;
 using Vec3 = DirectX::XMFLOAT3;
 using Vec4 = DirectX::XMFLOAT4;
 using Matrix=DirectX::SimpleMath::Matrix;
+using Quaternion = DirectX::SimpleMath::Quaternion;

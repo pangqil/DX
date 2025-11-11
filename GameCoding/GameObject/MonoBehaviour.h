@@ -1,13 +1,13 @@
 #pragma once
 
-class Monobehaviour: public Component
+class MonoBehaviour: public Component
 {
 public:
     using Super = Component;
 
 public:
-    Monobehaviour();
-    ~Monobehaviour();
+    MonoBehaviour();
+    ~MonoBehaviour();
 
     virtual void Awake() override;
     virtual void Update() override;

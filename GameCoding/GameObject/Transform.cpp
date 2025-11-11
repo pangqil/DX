@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Transform.h"
 
-Transform::Transform()
+Transform::Transform(): Super(ComponentType::Transform)
 {
     
 }
@@ -11,7 +11,7 @@ Transform::~Transform()
     
 }
 
-void Transform::Init()
+void Transform::Awake()
 {
     
 }
@@ -62,13 +62,9 @@ void Transform::UpdateTransform()
         _matWorld=_matLocal;
     }
 
-    SimpleMath::Quaternion quat;
+    Quaternion quat;
     _matWorld.Decompose(_scale, quat, _position);
     _rotation=ToEulerAngles(quat);
-
-    _right=Vec3::TransformNormal(Vec3::Right, _matWorld);
-    _up=Vec3::TransformNormal(Vec3::Up, _matWorld);
-    _look=Vec3::TransformNormal(Vec3::Backward, _matWorld);
 
     for (const shared_ptr<Transform>& child:_children)
         child->UpdateTransform();
@@ -91,25 +87,27 @@ void Transform::SetScale(const Vec3& worldScale)
     }
 }
 
-void Transform::SetRotation(const Vec3& worldrotation)
+void Transform::SetRotation(const Vec3& worldRotation)
 {//자식 world rotation = P_world rotation * C_local rotation
     //C_local rotation=P_world rotation^-1*C_world rotation
     //회전 벡터는 위치(방향, position)가 필요 없기에 방향벡터 제거한 normal로 변환
     if (HasParent())
     {
         Matrix inverseMatrix=_parent->GetWorldMatrix().Invert();
+
         Vec3 rotation;
-        rotation.TransformNormal(worldrotation, inverseMatrix);
+        rotation.TransformNormal(worldRotation, inverseMatrix);
+        
         SetLocalRotation(rotation);
     }
     else
     {
-        SetLocalRotation(worldrotation);
+        SetLocalRotation(worldRotation);
     }
     //TransformCoord, TransformNormal이 있다. normal은 방향만, coord는 위치를 옮길떄 사용한다.
 }
 
-void Transform::SetPosition(const Vec3& position)
+void Transform::SetPosition(const Vec3& worldPosition)
 {
     if (HasParent())
     {

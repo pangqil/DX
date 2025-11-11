@@ -3,11 +3,12 @@
 
 class Transform : public Component
 {
+    using Super=Component;
 public:
     Transform();
     ~Transform();
 
-    virtual void Init() override;
+    virtual void Awake() override;
     virtual void Update() override;
 
     void UpdateTransform();
@@ -28,6 +29,11 @@ public:
     Vec3 GetPosition() { return _position; }
     void SetPosition(const Vec3& position);
 
+    
+    Vec3 GetRight() { return _matWorld.Right(); }
+    Vec3 GetUp() { return _matWorld.Up(); }
+    Vec3 GetLook() { return _matWorld.Backward(); }
+    
     Matrix GetWorldMatrix() { return _matWorld; }
 
     bool HasParent() {return _parent!=nullptr;}
@@ -53,11 +59,11 @@ private:// SRT(Local, World, owner) 다 가지고 있음
     Vec3 _scale;
     Vec3 _rotation;
     Vec3 _position;
-
-    //Direct Vector
-    Vec3 _right;
-    Vec3 _up;
-    Vec3 _look;
+    //
+    // //Direct Vector
+    // Vec3 _right;
+    // Vec3 _up;
+    // Vec3 _look;
 
 private:
     //Is Parent

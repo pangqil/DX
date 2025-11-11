@@ -1,6 +1,6 @@
 #pragma once
 
-class GameObject
+class GameObject:public enable_shared_from_this<GameObject>
 {
 public:
     GameObject(ComPtr<ID3D11Device> device, ComPtr<ID3D11DeviceContext> devicecontext);

@@ -1,7 +1,9 @@
 #include "pch.h"
 #include "GameObject.h"
+#include "MonoBehaviour.h"
 
-GameObject::GameObject(ComPtr<ID3D11Device> device, ComPtr<ID3D11DeviceContext> devicecontext)
+
+GameObject::GameObject(ComPtr<ID3D11Device> device, ComPtr<ID3D11DeviceContext> deviceContext)
     :_device(device)
 {
     _geometry=make_shared<Geometry<VertexTextureData>>();
@@ -21,7 +23,7 @@ GameObject::GameObject(ComPtr<ID3D11Device> device, ComPtr<ID3D11DeviceContext> 
     _pixelShader=make_shared<PixelShader>(device);
     _pixelShader->Create(L"Default.hlsl", "PS", "ps_5_0");
     
-    _constantBuffer=make_shared<ConstantBuffer<TransformData>>(device, devicecontext);
+    _constantBuffer=make_shared<ConstantBuffer<TransformData>>(device, deviceContext);
     _constantBuffer->Create();
     
     _blendState=make_shared<BlendState>(device);
@@ -162,14 +164,13 @@ void GameObject::Render(shared_ptr<Pipeline> pipeline)
     info.pixelShader = _pixelShader;
     info.rasterizerState = _rasterizerState;
     info.blendState = _blendState;
-    pipeline->UpdatePipeline(info);
 
+    pipeline->UpdatePipeline(info);
     pipeline->SetVertexBuffer(_vertexBuffer);
     pipeline->SetIndexBuffer(_indexBuffer);
     pipeline->SetConstantBuffer(0, SS_VertexShader, _constantBuffer);
     pipeline->SetTexture(0, SS_PixelShader, _texture1);
     pipeline->SetSamplerState(0, SS_PixelShader, _samplerState);
-
     pipeline->DrawIndexed(_geometry->GetIndexCount(), 0, 0);
 
 }

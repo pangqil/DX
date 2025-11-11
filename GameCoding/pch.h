@@ -57,6 +57,6 @@ using namespace Microsoft::WRL;
 #include "Pipeline/04. PixelShader/Texture.h"
 #include "Pipeline/Pipeline.h"
 #include "GameObject/Transform.h"
-#include "GameObject/Monobehaviour.h"
+// #include "GameObject/MonoBehaviour.h"
 
 
