@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Scene.h"
 
-#include "../../GameObject/GameObject/GameObject.h"
+#include "../../Componen/GameObject/GameObject.h"
 
 void Scene::Awake()
 {
