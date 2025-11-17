@@ -10,7 +10,11 @@ public:
 
     ComPtr<ID3D11ShaderResourceView> GetComPtr(){return _shaderResourveView;}
     void Create(const wstring& path);
+
+    Vec2 GetSize() { return _size; }
+
     
     ComPtr<ID3D11Device> _device;
     ComPtr<ID3D11ShaderResourceView> _shaderResourveView = nullptr;
+    Vec2 _size = {0.f, 0.f};
 };

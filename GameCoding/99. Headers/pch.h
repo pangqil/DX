@@ -51,7 +51,7 @@ using namespace Microsoft::WRL;
 #include "01. InputAssembler/InputLayout.h"
 #include "01. InputAssembler/VertexBuffer.h"
 #include "02. VertexShader/ConstantBuffer.h"
-#include "02. VertexShader/Shader.h"
+#include "02. VertexShader/ShaderBase.h"
 #include "03. Rasterizer/BlendState.h"
 #include "03. Rasterizer/RasterizerState.h"
 #include "03. Rasterizer/SamplerState.h"

@@ -1,36 +1,37 @@
 #pragma once
+#include "Componen/Component.h"
+#include "Resource/Texture.h"
 
-class MeshRenderer: public Component
+class Mesh;
+class Material;
+
+class MeshRenderer : public Component
 {
-    using Super=Component;
+    using Super = Component;
 public:
     MeshRenderer(ComPtr<ID3D11Device> device, ComPtr<ID3D11DeviceContext> deviceContext);
     virtual ~MeshRenderer();
 
-    virtual void Update() override;
-    private:
-    void Render(shared_ptr<Pipeline> pipeline);
+    void SetMaterial(shared_ptr<Material> material) { _material = material; }
+    void SetShader(shared_ptr<ShaderBase> shader) { _material->SetShader(shader); }
+    void SetMesh(shared_ptr<Mesh> mesh) { _mesh = mesh; }
+    void SetTexture(shared_ptr<Texture> texture) { _material->SetTexture(texture); };
+
+    auto GetMaterial() { return _material; }
+    auto GetVertexShader() { return GetMaterial()->GetShader()->GetVertexShader(); }
+    auto GetInputLayout() { return GetMaterial()->GetShader()->GetInputLayout(); }
+    auto GetPixelShader() { return GetMaterial()->GetShader()->GetPixelShader(); }
+
+    shared_ptr<Mesh> GetMesh() { return _mesh; }
+    shared_ptr<Texture> GetTexture() { return GetMaterial()->GetTexture(); }
+
 private:
     ComPtr<ID3D11Device> _device;
 
-    shared_ptr<Geometry<VertexTextureData>> _geometry;
-    shared_ptr<VertexBuffer> _vertexBuffer;
-    shared_ptr<IndexBuffer> _indexBuffer;
-    shared_ptr<InputLayout> _inputLayout;//쉐이더(GPU)로 보낼 VertexBuffer에 대한 구조체 설정
+    friend class RenderManager;
 
-    shared_ptr<VertexShader> _vertexShader = nullptr;
-    shared_ptr<PixelShader> _pixelShader = nullptr;
-    shared_ptr<Texture> _texture1;
-    shared_ptr<Texture> _texture2;
-    shared_ptr<RasterizerState> _rasterizerState;
-
-    shared_ptr<SamplerState> _samplerState;
-    shared_ptr<BlendState> _blendState;
-
-private:
-    CameraData _cameraData;
-    shared_ptr<ConstantBuffer<CameraData>> _cameraBuffer;
-
-    TransformData _transformData;
-    shared_ptr<ConstantBuffer<TransformData>> _transformBuffer;
+    // Mesh
+    shared_ptr<Mesh> _mesh;
+    shared_ptr<Material> _material;
 };
+

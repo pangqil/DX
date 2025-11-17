@@ -4,7 +4,7 @@
 
 class Mesh;
 class Material;
-class Shader;
+class ShaderBase;
 class Animation;
 class Texture;
 
@@ -92,7 +92,7 @@ ResourceType ResourceManager::GetResourceType()
 {
 	if (std::is_same_v<T, Mesh>)
 		return ResourceType::Mesh;
-	if (std::is_same_v<T, Shader>)
+	if (std::is_same_v<T, ShaderBase>)
 		return ResourceType::Shader;
 	if (std::is_same_v<T, Texture>)
 		return ResourceType::Texture;

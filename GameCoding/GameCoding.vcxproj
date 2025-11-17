@@ -151,6 +151,7 @@
     <ClInclude Include="99. Headers\targetver.h" />
     <ClInclude Include="99. Headers\Types.h" />
     <ClInclude Include="99. Headers\Values.h" />
+    <ClInclude Include="Componen\Animation\Animator.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Componen\Camera\Camera.h" />
     <ClInclude Include="Componen\Component.h" />
@@ -171,13 +172,17 @@
     <ClInclude Include="Pipeline\01. InputAssembler\InputLayout.h" />
     <ClInclude Include="Pipeline\01. InputAssembler\VertexBuffer.h" />
     <ClInclude Include="Pipeline\02. VertexShader\ConstantBuffer.h" />
-    <ClInclude Include="Pipeline\02. VertexShader\Shader.h" />
+    <ClInclude Include="Pipeline\02. VertexShader\ShaderBase.h" />
     <ClInclude Include="Pipeline\03. Rasterizer\BlendState.h" />
     <ClInclude Include="Pipeline\03. Rasterizer\RasterizerState.h" />
     <ClInclude Include="Pipeline\04. PixelShader\SamplerState.h" />
     <ClInclude Include="Pipeline\graphics.h" />
     <ClInclude Include="Pipeline\Pipeline.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="Resource\Animation.h" />
+    <ClInclude Include="Resource\Material.h" />
+    <ClInclude Include="Resource\Mesh.h" />
+    <ClInclude Include="Resource\ShaderBase.h" />
     <ClInclude Include="Resource\Texture.h" />
     <ClInclude Include="SimpleMath\SimpleMath.h" />
     <ClInclude Include="SimpleMath\SimpleMath.inl" />
@@ -333,6 +338,7 @@
       <AdditionalIncludeDirectories>C:\Users\jaehyuck\Documents\DX11F\DX\Libraries/Include/;;C:\vcpkg\installed\x64-windows\include</AdditionalIncludeDirectories>
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
+    <ClCompile Include="Componen\Animation\Animator.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Componen\Camera\Camera.cpp">
       <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
@@ -649,7 +655,7 @@
     <ClCompile Include="Pipeline\01. InputAssembler\InputLayout.cpp" />
     <ClCompile Include="Pipeline\01. InputAssembler\VertexBuffer.cpp" />
     <ClCompile Include="Pipeline\02. VertexShader\ConstantBuffer.cpp" />
-    <ClCompile Include="Pipeline\02. VertexShader\Shader.cpp" />
+    <ClCompile Include="Pipeline\02. VertexShader\ShaderBase.cpp" />
     <ClCompile Include="Pipeline\03. Rasterizer\BlendState.cpp" />
     <ClCompile Include="Pipeline\03. Rasterizer\RasterizerState.cpp" />
     <ClCompile Include="Pipeline\04. PixelShader\SamplerState.cpp">
@@ -729,6 +735,10 @@
     </ClCompile>
     <ClCompile Include="Pipeline\graphics.cpp" />
     <ClCompile Include="Pipeline\Pipeline.cpp" />
+    <ClCompile Include="Resource\Animation.cpp" />
+    <ClCompile Include="Resource\Material.cpp" />
+    <ClCompile Include="Resource\Mesh.cpp" />
+    <ClCompile Include="Resource\ShaderBase.cpp" />
     <ClCompile Include="Resource\Texture.cpp">
       <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -814,11 +824,35 @@
     <Image Include="small.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Componen\Animation\" />
     <Folder Include="Pipeline\05. OutputMerger\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Pipeline\order.md" />
+    <Content Include="x64\Debug\Game.obj" />
+    <Content Include="x64\Debug\GameCoding.exe.recipe" />
+    <Content Include="x64\Debug\GameCoding.ilk" />
+    <Content Include="x64\Debug\GameCoding.log" />
+    <Content Include="x64\Debug\GameCoding.obj" />
+    <Content Include="x64\Debug\GameCoding.res" />
+    <Content Include="x64\Debug\GameCoding.tlog\CL.command.1.tlog" />
+    <Content Include="x64\Debug\GameCoding.tlog\Cl.items.tlog" />
+    <Content Include="x64\Debug\GameCoding.tlog\CL.read.1.tlog" />
+    <Content Include="x64\Debug\GameCoding.tlog\CL.write.1.tlog" />
+    <Content Include="x64\Debug\GameCoding.tlog\fxc.command.1.tlog" />
+    <Content Include="x64\Debug\GameCoding.tlog\fxc.read.1.tlog" />
+    <Content Include="x64\Debug\GameCoding.tlog\fxc.write.1.tlog" />
+    <Content Include="x64\Debug\GameCoding.tlog\GameCoding.lastbuildstate" />
+    <Content Include="x64\Debug\GameCoding.tlog\link.command.1.tlog" />
+    <Content Include="x64\Debug\GameCoding.tlog\link.read.1.tlog" />
+    <Content Include="x64\Debug\GameCoding.tlog\link.secondary.1.tlog" />
+    <Content Include="x64\Debug\GameCoding.tlog\link.write.1.tlog" />
+    <Content Include="x64\Debug\GameCoding.tlog\rc.command.1.tlog" />
+    <Content Include="x64\Debug\GameCoding.tlog\rc.read.1.tlog" />
+    <Content Include="x64\Debug\GameCoding.tlog\rc.write.1.tlog" />
+    <Content Include="x64\Debug\GameCoding.tlog\unsuccessfulbuild" />
+    <Content Include="x64\Debug\vc143.idb" />
+    <Content Include="x64\Debug\vc143.pdb" />
+    <Content Include="x64\Debug\vcpkg.applocal.log" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Shader\Color.hlsl">

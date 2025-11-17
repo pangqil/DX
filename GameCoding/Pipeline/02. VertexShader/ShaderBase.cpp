@@ -1,16 +1,16 @@
 #include "pch.h"
-#include "Shader.h"
+#include "ShaderBase.h"
 
 
-Shader::Shader(ComPtr<ID3D11Device> device)
+ShaderBase::ShaderBase(ComPtr<ID3D11Device> device)
 {
 }
 
-Shader::~Shader()
+ShaderBase::~ShaderBase()
 {
 }
 
-void Shader::LoadShaderFromFile(const wstring& path, const string& name, const string& version)
+void ShaderBase::LoadShaderFromFile(const wstring& path, const string& name, const string& version)
 {
     _path=path;
     _name=name;
