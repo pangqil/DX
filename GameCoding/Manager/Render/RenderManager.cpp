@@ -1,10 +1,16 @@
 #include "pch.h"
+#include "Game.h"
 #include "RenderManager.h"
 #include "Pipeline.h"
 #include "Componen/Camera/Camera.h"
-#include "Game.h"
+#include "Componen/Animation/Animator.h"
+#include "Componen/GameObject/GameObject.h"
+#include "Componen/Rendering/MeshRenderer.h"
+#include "Manager/Scene/Scene.h"
 #include "Manager/Scene/SceneManager.h"
 #include "Resource/Mesh.h"
+
+
 
 
 

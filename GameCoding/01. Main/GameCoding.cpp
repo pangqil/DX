@@ -2,6 +2,7 @@
 #include "../99. Headers/framework.h"
 #include "GameCoding.h"
 #include "Game.h"
+#include "Resource.h"
 
 #define MAX_LOADSTRING 100
 
@@ -27,7 +28,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         return FALSE;
 
     
-    GGame.Init(hWnd);
+    GGame->Init(hWnd);
 
     MSG msg = {};
 
@@ -41,8 +42,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         }
         else
         {
-            GGame.Update();
-            GGame.Render();
+            GGame->Update();
+            GGame->Render();
         }
     }
 

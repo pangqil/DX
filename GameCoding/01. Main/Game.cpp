@@ -2,6 +2,7 @@
 #include "Game.h"
 
 #include "Manager/Input/InputManager.h"
+#include "Manager/Render/RenderManager.h"
 #include "Manager/Resource/ResourceManager.h"
 #include "Manager/Scene/SceneManager.h"
 #include "Manager/Time/TimeManager.h"
