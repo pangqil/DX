@@ -1,12 +1,12 @@
 #pragma once
 #include "Manager/Resource/ResourceBase.h"
 
-class ShaderBase : public ResourceBase
+class Shader : public ResourceBase
 {
     using Super = ResourceBase;
 public:
-    ShaderBase();
-    virtual ~ShaderBase();
+    Shader();
+    virtual ~Shader();
 
     shared_ptr<InputLayout> GetInputLayout() { return _inputLayout; }
     shared_ptr<VertexShader> GetVertexShader() { return _vertexShader; }

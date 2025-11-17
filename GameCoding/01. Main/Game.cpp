@@ -1,15 +1,16 @@
 #include "pch.h"
 #include "Game.h"
-#include "Camera.h"
-#include "MeshRenderer.h"
-#include "InputManager.h"
-#include "TimeManager.h"
-#include "SceneManager.h"
-#include "ResourceManager.h"
+
+#include "Manager/Input/InputManager.h"
+#include "Manager/Resource/ResourceManager.h"
+#include "Manager/Scene/SceneManager.h"
+#include "Manager/Time/TimeManager.h"
+
+unique_ptr<Game> GGame = make_unique<Game>();
 
 Game::Game()
 {
-
+	
 }
 
 Game::~Game()
@@ -20,9 +21,8 @@ Game::~Game()
 void Game::Init(HWND hwnd)
 {
 	_hwnd = hwnd;
-	
-	_graphics=make_shared<Graphics>(hwnd);
-	_pipeline=make_shared<Pipeline>(_graphics->GetDeviceContext());
+
+	_graphics = make_shared<Graphics>(hwnd);
 
 	_input = make_shared<InputManager>();
 	_input->Init(hwnd);
@@ -32,22 +32,20 @@ void Game::Init(HWND hwnd)
 	_scene->Init();
 	_resource = make_shared<ResourceManager>(_graphics->GetDevice());
 	_resource->Init();
+	_render = make_shared<RenderManager>(_graphics->GetDevice(), _graphics->GetDeviceContext());
+	_render->Init();
 
 	SCENE->LoadScene(L"Test");
 }
 
 void Game::Update()
 {
-	_graphics->RenderBegin();
-
 	TIME->Update();
 	INPUT->Update();
 	SCENE->Update();
-
-	_graphics->RenderEnd();
 }
 
 void Game::Render()
 {
-	
+	RENDER->Update(_graphics);
 }

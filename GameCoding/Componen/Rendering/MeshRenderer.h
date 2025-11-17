@@ -1,5 +1,6 @@
 #pragma once
 #include "Componen/Component.h"
+#include "Resource/Material.h"
 #include "Resource/Texture.h"
 
 class Mesh;
@@ -13,7 +14,7 @@ public:
     virtual ~MeshRenderer();
 
     void SetMaterial(shared_ptr<Material> material) { _material = material; }
-    void SetShader(shared_ptr<ShaderBase> shader) { _material->SetShader(shader); }
+    void SetShader(shared_ptr<Shader> shader) { _material->SetShader(shader); }
     void SetMesh(shared_ptr<Mesh> mesh) { _mesh = mesh; }
     void SetTexture(shared_ptr<Texture> texture) { _material->SetTexture(texture); };
 

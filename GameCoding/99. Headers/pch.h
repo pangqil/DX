@@ -30,6 +30,11 @@ using namespace std;
 using namespace DirectX;
 using namespace Microsoft::WRL;
 
+// Utils
+#include "Utils/tiny/tinyxml2.h"
+using namespace tinyxml2;
+
+
 #pragma comment(lib, "d3d11.lib")
 #pragma comment(lib, "d3dcompiler.lib")
 
@@ -41,9 +46,16 @@ using namespace Microsoft::WRL;
 
 #define CHECK(p)	assert(SUCCEEDED(p))
 
+
+#define			GAME		GGame
+#define			INPUT		GAME->GetInputManager()
+#define			TIME		GAME->GetTimeManager()
+#define			SCENE		GAME->GetSceneManager()
+#define			RESOURCES	GAME->GetResourceManager()
+#define			RENDER		GAME->GetRenderManager()
+
 //Engine
 #include "graphics.h"
-#include "Pipeline.h"
 #include "00. Geometry/Geometry.h"
 #include "00. Geometry/GeometryHelper.h"
 #include "00. Geometry/VertexData.h"
@@ -54,9 +66,10 @@ using namespace Microsoft::WRL;
 #include "02. VertexShader/ShaderBase.h"
 #include "03. Rasterizer/BlendState.h"
 #include "03. Rasterizer/RasterizerState.h"
-#include "03. Rasterizer/SamplerState.h"
-#include "04. PixelShader/Texture.h"
-
+#include "04. PixelShader/SamplerState.h"
+#include "Resource/Texture.h"
+#include "Pipeline.h"
+#include "Componen/Transform.h"
 // #include "GameObject/MonoBehaviour.h"
 
 

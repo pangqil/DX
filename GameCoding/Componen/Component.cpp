@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "Component.h"
-#include "GameObject.h"
+#include "Componen/GameObject/GameObject.h"
 
 Component::Component(ComponentType type): _type(type)
 {

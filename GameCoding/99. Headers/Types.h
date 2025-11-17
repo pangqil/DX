@@ -1,8 +1,7 @@
 #pragma once
 #include <windows.h>
 #include "DirectXMath.h"
-#include "SimpleMath/SimpleMath.h"
-
+#include "Utils/SimpleMath/SimpleMath.h"
 
 using int8 = __int8;
 using int16 = __int16;
@@ -15,8 +14,8 @@ using uint64 = unsigned __int64;
 
 using Color = DirectX::XMFLOAT4;
 
-using Vec2 = DirectX::XMFLOAT2;
-using Vec3 = DirectX::XMFLOAT3;
-using Vec4 = DirectX::XMFLOAT4;
-using Matrix=DirectX::SimpleMath::Matrix;
+using Vec2 = DirectX::SimpleMath::Vector2;
+using Vec3 = DirectX::SimpleMath::Vector3;
+using Vec4 = DirectX::SimpleMath::Vector4;
+using Matrix = DirectX::SimpleMath::Matrix;
 using Quaternion = DirectX::SimpleMath::Quaternion;
