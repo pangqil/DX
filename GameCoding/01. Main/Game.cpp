@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "Game.h"
-
+#include "graphics.h"
 #include "Manager/Input/InputManager.h"
 #include "Manager/Render/RenderManager.h"
 #include "Manager/Resource/ResourceManager.h"

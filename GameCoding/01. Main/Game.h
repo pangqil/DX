@@ -1,7 +1,6 @@
 #pragma once
 
-#include "Graphics.h"
-
+class Graphics;
 class InputManager;
 class TimeManager;
 class SceneManager;

@@ -1,5 +1,9 @@
 #pragma once
 
+enum class ComponentType : uint8;
+
+class Component;
+class Transform;
 class MonoBehaviour;
 class Camera;
 class MeshRenderer;

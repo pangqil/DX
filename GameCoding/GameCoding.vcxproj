@@ -117,7 +117,9 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
         
         <AdditionalIncludeDirectories>.\Pipeline; ..\Binaries\Include; .;   ./01. Main;  ./99. Headers;  %(AdditionalIncludeDirectories)
-        </AdditionalIncludeDirectories></ClCompile>
+        </AdditionalIncludeDirectories>
+        
+        <AdditionalOptions>/FS</AdditionalOptions></ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
