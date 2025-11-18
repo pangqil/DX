@@ -980,6 +980,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pipeline\05. OutputMerger\" />
+    <Folder Include="Resource\Anim\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Pipeline\order.md" />

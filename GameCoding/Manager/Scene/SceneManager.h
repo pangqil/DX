@@ -1,5 +1,6 @@
 #pragma once
 
+class Graphics;
 class Scene;
 
 class SceneManager
@@ -10,8 +11,6 @@ public:
     void Init();
     void Update();
     void LoadScene(wstring sceneName);
-
-
     
 public:
     shared_ptr<Scene> GetActiveScene() { return _activeScene; }
