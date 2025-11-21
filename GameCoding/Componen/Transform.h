@@ -59,11 +59,6 @@ private:// SRT(Local, World, owner) 다 가지고 있음
     Vec3 _scale;
     Vec3 _rotation;
     Vec3 _position;
-    //
-    // //Direct Vector
-    // Vec3 _right;
-    // Vec3 _up;
-    // Vec3 _look;
 
 private:
     //Is Parent

@@ -31,10 +31,9 @@ public:
 	virtual void LateUpdate() {}
 	virtual void FixedUpdate() {}
 public:
-	//getter
 	ComponentType GetType(){return _type;}
 
-	shared_ptr<GameObject>GetGameObject();
+	shared_ptr<GameObject> GetGameObject();
 	shared_ptr<Transform> GetTransform();
 	
 private:

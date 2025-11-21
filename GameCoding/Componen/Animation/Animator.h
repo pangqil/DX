@@ -1,6 +1,8 @@
 #pragma once
-#include "Componen/Component.h"
-#include "Resource/Animation.h"
+
+
+#include "../Component.h"
+#include "../../Resource/Animation.h"
 
 class Animator : public Component
 {

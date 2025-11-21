@@ -1,8 +1,7 @@
 #pragma once
 
-enum class ComponentType : uint8;
+#include "../Component.h"
 
-class Component;
 class Transform;
 class MonoBehaviour;
 class Camera;

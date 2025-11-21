@@ -2,6 +2,7 @@
 #include "ResourceManager.h"
 
 ResourceBase::ResourceBase(ResourceType type)
+    : _type(type)
 {
 }
 

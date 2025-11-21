@@ -1,5 +1,12 @@
 #pragma once
 #include "RenderHelper.h"
+#include "02. VertexShader/ConstantBuffer.h"
+
+class GameObject;
+class BlendState;
+class SamplerState;
+class RasterizerState;
+class Pipeline;
 
 class RenderManager
 {
