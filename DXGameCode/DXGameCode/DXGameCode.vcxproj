@@ -154,6 +154,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <FxCompile Include="Client\Shaders\01. Triangle.fx" />
     <ClCompile Include="DXGameCode.cpp" />
   </ItemGroup>
   <ItemGroup>

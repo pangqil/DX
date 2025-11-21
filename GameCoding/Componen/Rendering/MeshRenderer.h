@@ -35,4 +35,7 @@ private:
     shared_ptr<Mesh> _mesh;
     shared_ptr<Material> _material;
 };
+//Mesh를 어떻게 그릴지 정의하기 위해서는 3가지(mesh, Shader)를 필요로 한다. Color나 Texture는 기법에 따라 달라질 수 있으나 전자는 그렇지 않다.
+//material은 mesh에 씌우는 껍질이며, material(Texture, Shader, Color)등이 존재한다. 
+
 

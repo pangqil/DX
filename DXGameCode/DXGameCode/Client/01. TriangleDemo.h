@@ -13,4 +13,4 @@ public:
 	vector<VertexData> _vertices;
 	shared_ptr<VertexBuffer> _buffer;
 };
-
+//Shader, verticle, buffer만으로 삼각형 그리기

@@ -4,15 +4,7 @@
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="754bab01-3237-4baf-8177-d4549f7f959a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/GameCoding/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameCoding/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameCoding/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameCoding/Game.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameCoding/SimpleMath.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameCoding/SimpleMath.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameCoding/SimpleMath.inl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameCoding/Struct.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameCoding/Struct.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameCoding/Types.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameCoding/Types.h" afterDir="false" />
-    </list>
+    <list default="true" id="754bab01-3237-4baf-8177-d4549f7f959a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,41 +16,41 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "pangqil"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;pangqil&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/pangqil/DX.git",
-    "accountId": "a0aef108-998d-4ed4-bcc2-98ff691e49c3"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/pangqil/DX.git&quot;,
+    &quot;accountId&quot;: &quot;a0aef108-998d-4ed4-bcc2-98ff691e49c3&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="34V4tGqadODQNbkdpPBmyLtT5De" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="754bab01-3237-4baf-8177-d4549f7f959a" name="Changes" comment="" />
@@ -67,7 +59,11 @@
       <option name="presentableId" value="Default" />
       <updated>1761285619463</updated>
       <workItem from="1761285622033" duration="11000" />
+      <workItem from="1763707725934" duration="10000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

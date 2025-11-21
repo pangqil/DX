@@ -155,6 +155,8 @@
     <ClInclude Include="99. Headers\Struct.h" />
     <ClInclude Include="99. Headers\targetver.h" />
     <ClInclude Include="99. Headers\Types.h" />
+    <ClInclude Include="99. Headers\Utils\SimpleMath\SimpleMath.h" />
+    <ClInclude Include="99. Headers\Utils\SimpleMath\SimpleMath.inl" />
     <ClInclude Include="99. Headers\Utils\tiny\tinyxml2.h" />
     <ClInclude Include="99. Headers\Values.h" />
     <ClInclude Include="Componen\Animation\Animator.h" />
@@ -418,6 +420,7 @@
       <SDLCheck>true</SDLCheck>
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
+    <ClCompile Include="99. Headers\Utils\SimpleMath\SimpleMath.cpp" />
     <ClCompile Include="99. Headers\Utils\tiny\tinyxml2.cpp">
       <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>

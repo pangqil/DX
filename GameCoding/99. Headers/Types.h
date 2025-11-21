@@ -19,3 +19,5 @@ using Vec3 = DirectX::SimpleMath::Vector3;
 using Vec4 = DirectX::SimpleMath::Vector4;
 using Matrix = DirectX::SimpleMath::Matrix;
 using Quaternion = DirectX::SimpleMath::Quaternion;
+
+//Direct X, unsigned 등 이름이 긴 변수 데이터들을 간단하게 사용하기 위한 약자 모음

@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "01. TriangleDemo.h"
-
+//초기화 과정에선 Triangle 쉐이더, vectices position을 
 void TriangleDemo::Init()
 {
 	_shader = make_shared<Shader>(L"01. Triangle.fx");
@@ -15,7 +15,7 @@ void TriangleDemo::Init()
 
 	_buffer = make_shared<VertexBuffer>();
 	_buffer->Create(_vertices);
-}
+}//Init에선 shader를 만들고 buffer를 생성.
 
 void TriangleDemo::Update()
 {

@@ -53,6 +53,7 @@ using namespace tinyxml2;
 #define			SCENE		GAME->GetSceneManager()
 #define			RESOURCES	GAME->GetResourceManager()
 #define			RENDER		GAME->GetRenderManager()
+//Manger
 
 //Engine
 #include "graphics.h"

@@ -36,3 +36,8 @@ protected:
     array<shared_ptr<Component>, FIXED_COMPONENT_COUNT> _components;
     vector<shared_ptr<MonoBehaviour>> _scripts;
 };
+/*
+ 해당 Object는 Unity의 엔진 구조를 모방하였다.
+ 기본 속성 - Transform, ComponentType, Camera, MeshRenderer, Animator가 요소다.
+ 보조 속성 - Component, Script이며 여기에 Object의 각 기본 속성들이 포함된다.
+ */
