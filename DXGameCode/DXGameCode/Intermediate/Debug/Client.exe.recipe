@@ -2,12 +2,18 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\Rookiss\Desktop\GameCoding\Binaries\Client.exe</FullPath>
+      <FullPath>C:\Users\jaehyuck\RiderProjects\C++\GameCode\Binaries\Client.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
-      <FullPath>C:\Users\Rookiss\Desktop\GameCoding\Binaries\01. Triangle.cso</FullPath>
+      <FullPath>C:\Users\jaehyuck\RiderProjects\C++\GameCode\Binaries\01. Triangle.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\jaehyuck\RiderProjects\C++\GameCode\Binaries\02. Quad.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\jaehyuck\RiderProjects\C++\GameCode\Binaries\03. ConstBuffer.cso</FullPath>
     </ContentFile>
   </ContentFiles>
   <SatelliteDlls />

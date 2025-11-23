@@ -1,0 +1,52 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: 중간 디렉터리(C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\)에 다른 프로젝트(Engine.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+  05. TextureDemo.cpp
+C:\Users\jaehyuck\RiderProjects\C++\GameCode\Libraries\Include\Engine\Camera.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 '/05.%20TextureDemo.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\jaehyuck\RiderProjects\C++\GameCode\Libraries\Include\Engine\MonoBehaviour.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 '/05.%20TextureDemo.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\jaehyuck\RiderProjects\C++\GameCode\Libraries\Include\Engine\Transform.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 '/05.%20TextureDemo.cpp'을(를) 컴파일하는 중)
+  
+DirectXTex_debug.lib(DirectXTexImage.obj) : warning LNK4099: '' PDB를 'DirectXTex_debug.lib(DirectXTexImage.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_debug.lib(DirectXTexWIC.obj) : warning LNK4099: '' PDB를 'DirectXTex_debug.lib(DirectXTexWIC.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_debug.lib(DirectXTexD3D11.obj) : warning LNK4099: '' PDB를 'DirectXTex_debug.lib(DirectXTexD3D11.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_debug.lib(DirectXTexUtil.obj) : warning LNK4099: '' PDB를 'DirectXTex_debug.lib(DirectXTexUtil.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_debug.lib(DirectXTexConvert.obj) : warning LNK4099: '' PDB를 'DirectXTex_debug.lib(DirectXTexConvert.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_debug.lib(DirectXTexMipMaps.obj) : warning LNK4099: '' PDB를 'DirectXTex_debug.lib(DirectXTexMipMaps.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_debug.lib(DirectXTexCompress.obj) : warning LNK4099: '' PDB를 'DirectXTex_debug.lib(DirectXTexCompress.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_debug.lib(BC.obj) : warning LNK4099: '' PDB를 'DirectXTex_debug.lib(BC.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_debug.lib(BC4BC5.obj) : warning LNK4099: '' PDB를 'DirectXTex_debug.lib(BC4BC5.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTex_debug.lib(BC6HBC7.obj) : warning LNK4099: '' PDB를 'DirectXTex_debug.lib(BC6HBC7.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+04. CameraDemo.obj : error LNK2019: "public: __cdecl GameObject::GameObject(void)" (??0GameObject@@QEAA@XZ)"void __cdecl std::_Construct_in_place<class GameObject>(class GameObject &)" (??$_Construct_in_place@VGameObject@@$$V@std@@YAXAEAVGameObject@@@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
+05. TextureDemo.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: __cdecl GameObject::GameObject(void)" (??0GameObject@@QEAA@XZ)
+04. CameraDemo.obj : error LNK2019: "public: __cdecl GameObject::~GameObject(void)" (??1GameObject@@QEAA@XZ)"public: void * __cdecl GameObject::`scalar deleting destructor'(unsigned int)" (??_GGameObject@@QEAAPEAXI@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
+05. TextureDemo.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: __cdecl GameObject::~GameObject(void)" (??1GameObject@@QEAA@XZ)
+04. CameraDemo.obj : error LNK2019: "public: void __cdecl GameObject::Update(void)" (?Update@GameObject@@QEAAXXZ)"public: virtual void __cdecl CameraDemo::Update(void)" (?Update@CameraDemo@@UEAAXXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+05. TextureDemo.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: void __cdecl GameObject::Update(void)" (?Update@GameObject@@QEAAXXZ)
+04. CameraDemo.obj : error LNK2019: "public: class std::shared_ptr<class Transform> __cdecl GameObject::GetTransform(void)" (?GetTransform@GameObject@@QEAA?AV?$shared_ptr@VTransform@@@std@@XZ)"public: virtual void __cdecl CameraDemo::Init(void)" (?Init@CameraDemo@@UEAAXXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+05. TextureDemo.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: class std::shared_ptr<class Transform> __cdecl GameObject::GetTransform(void)" (?GetTransform@GameObject@@QEAA?AV?$shared_ptr@VTransform@@@std@@XZ)
+04. CameraDemo.obj : error LNK2019: "public: class std::shared_ptr<class Transform> __cdecl GameObject::GetOrAddTransform(void)" (?GetOrAddTransform@GameObject@@QEAA?AV?$shared_ptr@VTransform@@@std@@XZ)"public: virtual void __cdecl CameraDemo::Init(void)" (?Init@CameraDemo@@UEAAXXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+05. TextureDemo.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: class std::shared_ptr<class Transform> __cdecl GameObject::GetOrAddTransform(void)" (?GetOrAddTransform@GameObject@@QEAA?AV?$shared_ptr@VTransform@@@std@@XZ)
+04. CameraDemo.obj : error LNK2019: "public: void __cdecl GameObject::AddComponent(class std::shared_ptr<class Component>)" (?AddComponent@GameObject@@QEAAXV?$shared_ptr@VComponent@@@std@@@Z)"public: virtual void __cdecl CameraDemo::Init(void)" (?Init@CameraDemo@@UEAAXXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+05. TextureDemo.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: void __cdecl GameObject::AddComponent(class std::shared_ptr<class Component>)" (?AddComponent@GameObject@@QEAAXV?$shared_ptr@VComponent@@@std@@@Z)
+04. CameraDemo.obj : error LNK2019: "public: __cdecl Camera::Camera(void)" (??0Camera@@QEAA@XZ)"void __cdecl std::_Construct_in_place<class Camera>(class Camera &)" (??$_Construct_in_place@VCamera@@$$V@std@@YAXAEAVCamera@@@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
+05. TextureDemo.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: __cdecl Camera::Camera(void)" (??0Camera@@QEAA@XZ)
+04. CameraDemo.obj : error LNK2019: "public: __cdecl MonoBehaviour::MonoBehaviour(void)" (??0MonoBehaviour@@QEAA@XZ)"public: __cdecl CameraScript::CameraScript(void)" (??0CameraScript@@QEAA@XZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+05. TextureDemo.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: __cdecl MonoBehaviour::MonoBehaviour(void)" (??0MonoBehaviour@@QEAA@XZ)
+04. CameraDemo.obj : error LNK2019: "public: virtual __cdecl MonoBehaviour::~MonoBehaviour(void)" (??1MonoBehaviour@@UEAA@XZ)"public: virtual __cdecl CameraScript::~CameraScript(void)" (??1CameraScript@@UEAA@XZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+05. TextureDemo.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: virtual __cdecl MonoBehaviour::~MonoBehaviour(void)" (??1MonoBehaviour@@UEAA@XZ)
+04. CameraDemo.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: virtual void __cdecl MonoBehaviour::Awake(void)" (?Awake@MonoBehaviour@@UEAAXXZ)
+05. TextureDemo.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: virtual void __cdecl MonoBehaviour::Awake(void)" (?Awake@MonoBehaviour@@UEAAXXZ)
+04. CameraDemo.obj : error LNK2019: "public: void __cdecl Transform::SetPosition(struct DirectX::SimpleMath::Vector3 const &)" (?SetPosition@Transform@@QEAAXAEBUVector3@SimpleMath@DirectX@@@Z)"public: virtual void __cdecl CameraDemo::Init(void)" (?Init@CameraDemo@@UEAAXXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+05. TextureDemo.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: void __cdecl Transform::SetPosition(struct DirectX::SimpleMath::Vector3 const &)" (?SetPosition@Transform@@QEAAXAEBUVector3@SimpleMath@DirectX@@@Z)
+CameraScript.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: void __cdecl Transform::SetPosition(struct DirectX::SimpleMath::Vector3 const &)" (?SetPosition@Transform@@QEAAXAEBUVector3@SimpleMath@DirectX@@@Z)
+04. CameraDemo.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: static struct DirectX::SimpleMath::Matrix Camera::S_MatView" (?S_MatView@Camera@@2UMatrix@SimpleMath@DirectX@@A)
+05. TextureDemo.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: static struct DirectX::SimpleMath::Matrix Camera::S_MatView" (?S_MatView@Camera@@2UMatrix@SimpleMath@DirectX@@A)
+04. CameraDemo.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: static struct DirectX::SimpleMath::Matrix Camera::S_MatProjection" (?S_MatProjection@Camera@@2UMatrix@SimpleMath@DirectX@@A)
+05. TextureDemo.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: static struct DirectX::SimpleMath::Matrix Camera::S_MatProjection" (?S_MatProjection@Camera@@2UMatrix@SimpleMath@DirectX@@A)
+05. TextureDemo.obj : error LNK2019: "public: static void __cdecl GeometryHelper::CreateQuad(class std::shared_ptr<class Geometry<struct VertexTextureData> >)" (?CreateQuad@GeometryHelper@@SAXV?$shared_ptr@V?$Geometry@UVertexTextureData@@@@@std@@@Z)"public: virtual void __cdecl TextureDemo::Init(void)" (?Init@TextureDemo@@UEAAXXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+CameraScript.obj : error LNK2019: "public: class std::shared_ptr<class Transform> __cdecl Component::GetTransform(void)" (?GetTransform@Component@@QEAA?AV?$shared_ptr@VTransform@@@std@@XZ)"public: virtual void __cdecl CameraScript::Update(void)" (?Update@CameraScript@@UEAAXXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+CameraScript.obj : error LNK2019: "public: void __cdecl Transform::UpdateTransform(void)" (?UpdateTransform@Transform@@QEAAXXZ)"public: void __cdecl Transform::SetLocalRotation(struct DirectX::SimpleMath::Vector3 const &)" (?SetLocalRotation@Transform@@QEAAXAEBUVector3@SimpleMath@DirectX@@@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
+C:\Users\jaehyuck\RiderProjects\C++\GameCode\Binaries\Client.exe : fatal error LNK1120: 16개의 확인할 수 없는 외부 참조입니다.

@@ -1,0 +1,50 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: 중간 디렉터리(C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\)에 다른 프로젝트(Client.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Camera.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Component.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\ConstantBuffer.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Define.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\EnginePch.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\framework.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Game.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\GameObject.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Geometry.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\GeometryHelper.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Graphics.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\IExecute.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\IndexBuffer.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\InputManager.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\MeshRenderer.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\MonoBehaviour.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Pass.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\pch.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\ResourceBase.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\ResourceManager.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Shader.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\SimpleMath.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Technique.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Texture.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\TimeManager.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\tinyxml2.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Transform.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Types.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Utils.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\VertexBuffer.h
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\VertexData.h
+  31개 파일이 복사되었습니다.
+  C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\SimpleMath.inl
+  1개 파일이 복사되었습니다.
+  GameObject.cpp
+C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\MonoBehaviour.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 '/GameObject.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Camera.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 '/GameObject.cpp'을(를) 컴파일하는 중)
+  
+  MeshRenderer.cpp
+C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Camera.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 '/MeshRenderer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\MeshRenderer.cpp(5,10): error C1083: 포함 파일을 열 수 없습니다. 'Mesh.h': No such file or directory
+  (소스 파일 '/MeshRenderer.cpp'을(를) 컴파일하는 중)
+  
+  코드를 생성하고 있습니다...

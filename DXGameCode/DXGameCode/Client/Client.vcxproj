@@ -19,11 +19,25 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD:GameCode-P2/Client/Client.vcxproj
+    <ClInclude Include="02. QuadDemo.h" />
+    <ClInclude Include="03. ConstBufferDemo.h" />
+    <ClInclude Include="04. CameraDemo.h" />
+    <ClInclude Include="CameraScript.h" />
+=======
+>>>>>>> parent of 5f958db ([ADD] Project Devide):DXGameCode/DXGameCode/Client/Client.vcxproj
     <ClInclude Include="Main.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="01. TriangleDemo.h" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD:GameCode-P2/Client/Client.vcxproj
+    <ClCompile Include="02. QuadDemo.cpp" />
+    <ClCompile Include="03. ConstBufferDemo.cpp" />
+    <ClCompile Include="04. CameraDemo.cpp" />
+    <ClCompile Include="CameraScript.cpp" />
+=======
+>>>>>>> parent of 5f958db ([ADD] Project Devide):DXGameCode/DXGameCode/Client/Client.vcxproj
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -42,6 +56,23 @@
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Effect</ShaderType>
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
     </FxCompile>
+<<<<<<< HEAD:GameCode-P2/Client/Client.vcxproj
+    <FxCompile Include="..\Shaders\02. Quad.fx">
+      <ObjectFileOutput>C:\Users\jaehyuck\RiderProjects\C++\GameCode\Binaries\%(Filename).cso</ObjectFileOutput>
+      <TrackerLogDirectory>C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\Client.tlog\</TrackerLogDirectory>
+      <EntryPointName>
+      </EntryPointName>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ShaderModel>5.0</ShaderModel>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <DisableOptimizations>true</DisableOptimizations>
+      <EnableDebuggingInformation>true</EnableDebuggingInformation>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile Include="..\Shaders\03. ConstBuffer.fx" />
+    <FxCompile Include="..\Shaders\04. World.fx" />
+=======
+>>>>>>> parent of 5f958db ([ADD] Project Devide):DXGameCode/DXGameCode/Client/Client.vcxproj
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -146,6 +177,12 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)Libraries\Lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>

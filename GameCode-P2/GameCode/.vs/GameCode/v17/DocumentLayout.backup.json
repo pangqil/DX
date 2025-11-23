@@ -1,0 +1,794 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Transform.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Transform.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Transform.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Transform.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Component.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Component.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\MonoBehaviour.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\MonoBehaviour.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\GameObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\GameObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\05. TextureDemo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|solutionrelative:Client\\05. TextureDemo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\05. TextureDemo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|solutionrelative:Client\\05. TextureDemo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\04. CameraDemo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|solutionrelative:Client\\04. CameraDemo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\04. CameraDemo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|solutionrelative:Client\\04. CameraDemo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|solutionrelative:Client\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\MonoBehaviour.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\MonoBehaviour.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Component.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Component.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\GameObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\GameObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\ResourceBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\ResourceBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\ResourceBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\ResourceBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Shaders\\03. ConstBuffer.fx||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|solutionrelative:Shaders\\03. ConstBuffer.fx||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\EnginePch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\EnginePch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|solutionrelative:Client\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\GeometryHelper.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\GeometryHelper.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\GeometryHelper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\GeometryHelper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Shaders\\04. Texture.fx||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|solutionrelative:Shaders\\04. Texture.fx||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Define.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Define.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Libraries\\Include\\Engine\\ResourceManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Libraries\\Include\\Engine\\ResourceManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\03. ConstBufferDemo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|solutionrelative:Client\\03. ConstBufferDemo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\01. TriangleDemo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|solutionrelative:Client\\01. TriangleDemo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\02. QuadDemo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|solutionrelative:Client\\02. QuadDemo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\02. QuadDemo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|solutionrelative:Client\\02. QuadDemo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\Main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|solutionrelative:Client\\Main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\01. TriangleDemo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\IExecute.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\IExecute.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\IExecute.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\IExecute.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\Main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Engine\\IExecute.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Engine\\ResourceManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Engine\\Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Shaders\\01. Triangle.fx||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2C2D9AA8-61C9-4AB4-B14A-DBDF76A868CC}|Client\\Client.vcxproj|solutionrelative:Client\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Camera.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Camera.cpp",
+              "RelativeDocumentMoniker": "Engine\\Camera.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Camera.cpp",
+              "RelativeToolTip": "Engine\\Camera.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-23T11:43:44.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Camera.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Camera.h",
+              "RelativeDocumentMoniker": "Engine\\Camera.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Camera.h",
+              "RelativeToolTip": "Engine\\Camera.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-23T11:43:42.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Transform.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Transform.cpp",
+              "RelativeDocumentMoniker": "Engine\\Transform.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Transform.cpp*",
+              "RelativeToolTip": "Engine\\Transform.cpp*",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAcwGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-23T11:40:50.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MonoBehaviour.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\MonoBehaviour.h",
+              "RelativeDocumentMoniker": "Engine\\MonoBehaviour.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\MonoBehaviour.h",
+              "RelativeToolTip": "Engine\\MonoBehaviour.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-23T11:34:25.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Component.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Component.cpp",
+              "RelativeDocumentMoniker": "Engine\\Component.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Component.cpp",
+              "RelativeToolTip": "Engine\\Component.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-23T11:33:41.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Transform.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Transform.h",
+              "RelativeDocumentMoniker": "Engine\\Transform.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Transform.h",
+              "RelativeToolTip": "Engine\\Transform.h",
+              "ViewState": "AgIAABIAAAAAAAAAAAAcwEIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-23T11:34:41.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "05. TextureDemo.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\05. TextureDemo.cpp",
+              "RelativeDocumentMoniker": "Client\\05. TextureDemo.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\05. TextureDemo.cpp",
+              "RelativeToolTip": "Client\\05. TextureDemo.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-23T10:16:43.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "05. TextureDemo.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\05. TextureDemo.h",
+              "RelativeDocumentMoniker": "Client\\05. TextureDemo.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\05. TextureDemo.h",
+              "RelativeToolTip": "Client\\05. TextureDemo.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-23T10:16:42.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "04. CameraDemo.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\04. CameraDemo.cpp",
+              "RelativeDocumentMoniker": "Client\\04. CameraDemo.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\04. CameraDemo.cpp",
+              "RelativeToolTip": "Client\\04. CameraDemo.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-23T10:29:24.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameObject.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\GameObject.cpp",
+              "RelativeDocumentMoniker": "Engine\\GameObject.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\GameObject.cpp",
+              "RelativeToolTip": "Engine\\GameObject.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-23T10:30:24.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "04. CameraDemo.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\04. CameraDemo.h",
+              "RelativeDocumentMoniker": "Client\\04. CameraDemo.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\04. CameraDemo.h",
+              "RelativeToolTip": "Client\\04. CameraDemo.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-23T10:15:20.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "pch.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\pch.h",
+              "RelativeDocumentMoniker": "Client\\pch.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\pch.h",
+              "RelativeToolTip": "Client\\pch.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-23T11:37:26.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MonoBehaviour.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\MonoBehaviour.cpp",
+              "RelativeDocumentMoniker": "Engine\\MonoBehaviour.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\MonoBehaviour.cpp",
+              "RelativeToolTip": "Engine\\MonoBehaviour.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-23T11:34:33.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Component.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Component.h",
+              "RelativeDocumentMoniker": "Engine\\Component.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Component.h",
+              "RelativeToolTip": "Engine\\Component.h",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwCgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-23T11:33:28.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GameObject.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\GameObject.h",
+              "RelativeDocumentMoniker": "Engine\\GameObject.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\GameObject.h",
+              "RelativeToolTip": "Engine\\GameObject.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-23T11:31:55.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ResourceBase.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\ResourceBase.cpp",
+              "RelativeDocumentMoniker": "Engine\\ResourceBase.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\ResourceBase.cpp",
+              "RelativeToolTip": "Engine\\ResourceBase.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-23T11:31:48.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ResourceBase.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\ResourceBase.h",
+              "RelativeDocumentMoniker": "Engine\\ResourceBase.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\ResourceBase.h",
+              "RelativeToolTip": "Engine\\ResourceBase.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-23T11:31:47.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Texture.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Texture.cpp",
+              "RelativeDocumentMoniker": "Engine\\Texture.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Texture.cpp",
+              "RelativeToolTip": "Engine\\Texture.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-23T11:31:45.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Texture.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Texture.h",
+              "RelativeDocumentMoniker": "Engine\\Texture.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Texture.h",
+              "RelativeToolTip": "Engine\\Texture.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-23T11:31:43.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "03. ConstBuffer.fx",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Shaders\\03. ConstBuffer.fx",
+              "RelativeDocumentMoniker": "Shaders\\03. ConstBuffer.fx",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Shaders\\03. ConstBuffer.fx",
+              "RelativeToolTip": "Shaders\\03. ConstBuffer.fx",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-23T11:02:45.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EnginePch.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\EnginePch.h",
+              "RelativeDocumentMoniker": "Engine\\EnginePch.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\EnginePch.h",
+              "RelativeToolTip": "Engine\\EnginePch.h",
+              "ViewState": "AgIAAC0AAAAAAAAAAADwv0IAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-23T10:52:42.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\Main.cpp",
+              "RelativeDocumentMoniker": "Client\\Main.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\Main.cpp",
+              "RelativeToolTip": "Client\\Main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-23T10:20:36.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GeometryHelper.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\GeometryHelper.cpp",
+              "RelativeDocumentMoniker": "Engine\\GeometryHelper.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\GeometryHelper.cpp",
+              "RelativeToolTip": "Engine\\GeometryHelper.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-23T10:55:15.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "04. Texture.fx",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Shaders\\04. Texture.fx",
+              "RelativeDocumentMoniker": "Shaders\\04. Texture.fx",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Shaders\\04. Texture.fx",
+              "RelativeToolTip": "Shaders\\04. Texture.fx",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAC4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-23T10:37:59.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "GeometryHelper.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\GeometryHelper.h",
+              "RelativeDocumentMoniker": "Engine\\GeometryHelper.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\GeometryHelper.h",
+              "RelativeToolTip": "Engine\\GeometryHelper.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-23T10:54:49.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Define.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Define.h",
+              "RelativeDocumentMoniker": "Engine\\Define.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Define.h",
+              "RelativeToolTip": "Engine\\Define.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-23T10:52:50.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "pch.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\pch.cpp",
+              "RelativeDocumentMoniker": "Engine\\pch.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\pch.cpp",
+              "RelativeToolTip": "Engine\\pch.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-23T10:52:51.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ResourceManager.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Libraries\\Include\\Engine\\ResourceManager.h",
+              "RelativeDocumentMoniker": "Libraries\\Include\\Engine\\ResourceManager.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Libraries\\Include\\Engine\\ResourceManager.h",
+              "RelativeToolTip": "Libraries\\Include\\Engine\\ResourceManager.h",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-23T10:37:21.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "03. ConstBufferDemo.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\03. ConstBufferDemo.cpp",
+              "RelativeDocumentMoniker": "Client\\03. ConstBufferDemo.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\03. ConstBufferDemo.cpp",
+              "RelativeToolTip": "Client\\03. ConstBufferDemo.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-23T10:15:10.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "01. TriangleDemo.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\01. TriangleDemo.cpp",
+              "RelativeDocumentMoniker": "Client\\01. TriangleDemo.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\01. TriangleDemo.cpp",
+              "RelativeToolTip": "Client\\01. TriangleDemo.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-23T10:32:46.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "02. QuadDemo.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\02. QuadDemo.cpp",
+              "RelativeDocumentMoniker": "Client\\02. QuadDemo.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\02. QuadDemo.cpp",
+              "RelativeToolTip": "Client\\02. QuadDemo.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-23T10:32:52.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "02. QuadDemo.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\02. QuadDemo.h",
+              "RelativeDocumentMoniker": "Client\\02. QuadDemo.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\02. QuadDemo.h",
+              "RelativeToolTip": "Client\\02. QuadDemo.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-23T10:32:52.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Main.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\Main.h",
+              "RelativeDocumentMoniker": "Client\\Main.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\Main.h",
+              "RelativeToolTip": "Client\\Main.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-23T10:20:37.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IExecute.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Engine\\IExecute.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Engine\\IExecute.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Engine\\IExecute.h",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Engine\\IExecute.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-21T18:15:03.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ResourceManager.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Engine\\ResourceManager.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Engine\\ResourceManager.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Engine\\ResourceManager.cpp",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Engine\\ResourceManager.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-21T18:12:55.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Shader.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Engine\\Shader.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Engine\\Shader.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Engine\\Shader.cpp",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Engine\\Shader.cpp",
+              "ViewState": "AgIAALAAAAAAAAAAAAAAwCsBAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-21T18:06:24.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\Main.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\Main.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\Main.cpp",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\Main.cpp",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-21T16:06:21.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "pch.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\pch.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\pch.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\pch.cpp",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\pch.cpp",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-21T16:06:16.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "pch.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\pch.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\pch.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\pch.h",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\pch.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-21T16:06:14.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "01. TriangleDemo.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\01. TriangleDemo.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\01. TriangleDemo.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\01. TriangleDemo.h",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\01. TriangleDemo.h",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-21T16:05:57.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IExecute.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\IExecute.cpp",
+              "RelativeDocumentMoniker": "Engine\\IExecute.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\IExecute.cpp",
+              "RelativeToolTip": "Engine\\IExecute.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-21T18:16:46.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IExecute.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\IExecute.h",
+              "RelativeDocumentMoniker": "Engine\\IExecute.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\IExecute.h",
+              "RelativeToolTip": "Engine\\IExecute.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-21T18:16:47.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Main.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\Main.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\Main.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\Main.h",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Client\\Main.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-21T18:19:19.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Game.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Game.cpp",
+              "RelativeDocumentMoniker": "Engine\\Game.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\Game.cpp",
+              "RelativeToolTip": "Engine\\Game.cpp",
+              "ViewState": "AgIAAFoAAAAAAAAAAADwv18AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-21T18:20:47.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "01. Triangle.fx",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Shaders\\01. Triangle.fx",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Shaders\\01. Triangle.fx",
+              "ToolTip": "C:\\Users\\jaehyuck\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Shaders\\01. Triangle.fx",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\A-01)\u002B\uD504\uB85C\uC81D\uD2B8\u002B\uC124\uC815 (1)\\Shaders\\01. Triangle.fx",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-21T16:05:03.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "pch.h",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\pch.h",
+              "RelativeDocumentMoniker": "Engine\\pch.h",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Engine\\pch.h",
+              "RelativeToolTip": "Engine\\pch.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-19T14:12:18.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "pch.cpp",
+              "DocumentMoniker": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\pch.cpp",
+              "RelativeDocumentMoniker": "Client\\pch.cpp",
+              "ToolTip": "C:\\Users\\jaehyuck\\RiderProjects\\C\u002B\u002B\\GameCode\\Client\\pch.cpp",
+              "RelativeToolTip": "Client\\pch.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-19T13:58:52.378Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

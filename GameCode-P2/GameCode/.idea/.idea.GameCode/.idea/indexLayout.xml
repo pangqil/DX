@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="UserContentModel">
+    <attachedFolders />
+    <explicitIncludes>
+      <Path>.idea</Path>
+      <Path>.vs</Path>
+      <Path>Binaries</Path>
+      <Path>Client/Client.cpp</Path>
+      <Path>Client/Client.vcxproj.filters</Path>
+      <Path>Client/Client.vcxproj.user</Path>
+      <Path>Engine/Engine.vcxproj.filters</Path>
+      <Path>Engine/Engine.vcxproj.user</Path>
+      <Path>Engine/framework.h</Path>
+      <Path>GameCode</Path>
+      <Path>Intermediate</Path>
+      <Path>Libraries</Path>
+      <Path>Resources</Path>
+    </explicitIncludes>
+    <explicitExcludes />
+  </component>
+</project>
