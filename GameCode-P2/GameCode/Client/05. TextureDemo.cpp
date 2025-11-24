@@ -12,8 +12,10 @@ void TextureDemo::Init()
 	_shader = make_shared<Shader>(L"04. Texture.fx");
 
 	_geometry = make_shared<Geometry<VertexTextureData>>();
-	GeometryHelper::CreateQuad(_geometry);
-
+	//GeometryHelper::CreateQuad(_geometry);
+	//GeometryHelper::CreateCube(_geometry);
+	//GeometryHelper::CreateSphere(_geometry);
+	GeometryHelper::CreateGrid(_geometry, 256, 256);
 
 	_vertexBuffer = make_shared<VertexBuffer>();
 	_vertexBuffer->Create(_geometry->GetVertices()); 

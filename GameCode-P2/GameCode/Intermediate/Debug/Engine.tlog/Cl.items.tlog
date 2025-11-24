@@ -1,11 +1,17 @@
+C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Camera.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\Camera.obj
+C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Component.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\Component.obj
 C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\ConstantBuffer.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\ConstantBuffer.obj
 C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Game.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\Game.obj
+C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\GameObject.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\GameObject.obj
 C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Geometry.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\Geometry.obj
 C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\GeometryHelper.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\GeometryHelper.obj
 C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Graphics.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\Graphics.obj
 C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\IExecute.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\IExecute.obj
 C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\IndexBuffer.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\IndexBuffer.obj
 C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\InputManager.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\InputManager.obj
+C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Mesh.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\Mesh.obj
+C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\MeshRenderer.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\MeshRenderer.obj
+C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\MonoBehaviour.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\MonoBehaviour.obj
 C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Pass.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\Pass.obj
 C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\pch.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\pch.obj
 C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\ResourceBase.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\ResourceBase.obj
@@ -16,6 +22,7 @@ C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Technique.cpp;C:\Users\jaehy
 C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Texture.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\Texture.obj
 C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\TimeManager.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\TimeManager.obj
 C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\tinyxml2.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\tinyxml2.obj
+C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Transform.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\Transform.obj
 C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\Utils.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\Utils.obj
 C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\VertexBuffer.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\VertexBuffer.obj
 C:\Users\jaehyuck\RiderProjects\C++\GameCode\Engine\VertexData.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\VertexData.obj

@@ -3,7 +3,7 @@
 #include "Geometry.h"
 #include "GameObject.h"
 
-class TextureDemo : public IExecute
+class SamplerDemo : public IExecute
 {
 public:
 	void Init() override;
