@@ -9,7 +9,6 @@ public:
 	void Update() override;
 	void Render() override;
 
-
 	shared_ptr<Shader> _shader;
 
 	shared_ptr<Geometry<VertexColorData>> _geometry;
@@ -23,6 +22,3 @@ public:
 	Matrix _projection = Matrix::Identity;
 };
 
-//01. vertexbuffer, vertex, shader
-//02. vertexbuffer, <geometry>vertexcolor, indexbuffer, shader
-//03. 02+ _translotaion

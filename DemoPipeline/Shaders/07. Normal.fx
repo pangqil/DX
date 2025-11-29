@@ -40,7 +40,7 @@ float4 PS(VertexOutput input) : SV_TARGET
 
 	//return float4(1, 1, 1, 1) * dot(light, normal);
 	return Texture0.Sample(Sampler0, input.uv) * dot(light, normal);
-}
+}//diffuse의 계산방식과 같다.
 
 RasterizerState FillModeWireFrame
 {

@@ -100,12 +100,6 @@ void Transform::SetRotation(const Vec3& worldRotation)
 	else
 		SetLocalRotation(worldRotation);
 }
-/*
-* //자식 world rotation = P_world rotation * C_local rotation
-	//C_local rotation=P_world rotation^-1*C_world rotation
-	//회전 벡터는 위치(방향, position)가 필요 없기에 방향벡터 제거한 normal로 변환
-	//TransformCoord, TransformNormal이 있다. normal은 방향만, coord는 위치를 옮길떄 사용한다.
-*/
 
 void Transform::SetPosition(const Vec3& worldPosition)
 {

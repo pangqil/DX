@@ -2,9 +2,9 @@
 #include "Component.h"
 #include "GameObject.h"
 
-Component::Component(ComponentType type): _type(type)
+Component::Component(ComponentType type) : _type(type)
 {
-    
+
 }
 
 Component::~Component()
@@ -12,13 +12,12 @@ Component::~Component()
 
 }
 
-shared_ptr<GameObject> Component::GetGameObject()
+std::shared_ptr<GameObject> Component::GetGameObject()
 {
-    return _gameObject.lock();
+	return _gameObject.lock();
 }
 
-shared_ptr<Transform> Component::GetTransform()
+std::shared_ptr<Transform> Component::GetTransform()
 {
-    return _gameObject.lock()->GetTransform();
+	return _gameObject.lock()->GetTransform();
 }
-

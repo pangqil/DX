@@ -1,7 +1,6 @@
 #pragma once
 #include "IExecute.h"
 #include "Geometry.h"
-#include "GameObject.h"
 
 class CameraDemo : public IExecute
 {
@@ -10,21 +9,15 @@ public:
 	void Update() override;
 	void Render() override;
 
-
 	shared_ptr<Shader> _shader;
 
-	//Object
+	// Object
 	shared_ptr<Geometry<VertexColorData>> _geometry;
 	shared_ptr<VertexBuffer> _vertexBuffer;
 	shared_ptr<IndexBuffer> _indexBuffer;
 	Matrix _world = Matrix::Identity;
 
-	//Camera
+	// Camera
 	shared_ptr<GameObject> _camera;
-
 };
 
-//01. vertexbuffer, vertex, shader
-//02. vertexbuffer, <geometry>vertexcolor, indexbuffer, shader
-//03. 02 + _translotaion
-//04. 03 +  

@@ -31,9 +31,6 @@
     <Filter Include="00. Engine\Resource">
       <UniqueIdentifier>{48c22b49-db12-48c1-97de-e85985049d35}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Shader">
-      <UniqueIdentifier>{0750a745-2c27-463d-816c-656637300a92}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -108,13 +105,13 @@
     <ClInclude Include="GeometryHelper.h">
       <Filter>01. Graphics\Buffer</Filter>
     </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>04. Component</Filter>
+    </ClInclude>
     <ClInclude Include="GameObject.h">
       <Filter>03. GameObject</Filter>
     </ClInclude>
     <ClInclude Include="Transform.h">
-      <Filter>04. Component</Filter>
-    </ClInclude>
-    <ClInclude Include="Component.h">
       <Filter>04. Component</Filter>
     </ClInclude>
     <ClInclude Include="MonoBehaviour.h">
@@ -123,10 +120,16 @@
     <ClInclude Include="Camera.h">
       <Filter>04. Component</Filter>
     </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>00. Engine\Resource</Filter>
+    </ClInclude>
     <ClInclude Include="MeshRenderer.h">
       <Filter>04. Component</Filter>
     </ClInclude>
-    <ClInclude Include="Mesh.h">
+    <ClInclude Include="RenderManager.h">
+      <Filter>02. Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
       <Filter>00. Engine\Resource</Filter>
     </ClInclude>
   </ItemGroup>
@@ -194,13 +197,13 @@
     <ClCompile Include="GeometryHelper.cpp">
       <Filter>01. Graphics\Buffer</Filter>
     </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>04. Component</Filter>
+    </ClCompile>
     <ClCompile Include="GameObject.cpp">
       <Filter>03. GameObject</Filter>
     </ClCompile>
     <ClCompile Include="Transform.cpp">
-      <Filter>04. Component</Filter>
-    </ClCompile>
-    <ClCompile Include="Component.cpp">
       <Filter>04. Component</Filter>
     </ClCompile>
     <ClCompile Include="MonoBehaviour.cpp">
@@ -209,10 +212,16 @@
     <ClCompile Include="Camera.cpp">
       <Filter>04. Component</Filter>
     </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>00. Engine\Resource</Filter>
+    </ClCompile>
     <ClCompile Include="MeshRenderer.cpp">
       <Filter>04. Component</Filter>
     </ClCompile>
-    <ClCompile Include="Mesh.cpp">
+    <ClCompile Include="RenderManager.cpp">
+      <Filter>02. Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
       <Filter>00. Engine\Resource</Filter>
     </ClCompile>
   </ItemGroup>

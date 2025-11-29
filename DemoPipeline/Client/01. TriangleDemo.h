@@ -14,4 +14,3 @@ public:
 	shared_ptr<VertexBuffer> _buffer;
 };
 
-//VertexBuffer, verticle, shader 3개만 사용했었음

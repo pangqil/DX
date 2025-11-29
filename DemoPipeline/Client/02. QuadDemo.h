@@ -17,5 +17,3 @@ public:
 	shared_ptr<IndexBuffer> _indexBuffer;
 };
 
-//01. vertexbuffer, vertex, shader
-//02. vertexbuffer, <geometry>vertexcolor, indexbuffer, shader

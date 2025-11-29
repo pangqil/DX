@@ -10,11 +10,10 @@ void QuadDemo::Init()
 	GeometryHelper::CreateQuad(_geometry, Color(0.f, 1.f, 0.f, 1.f));
 
 	_vertexBuffer = make_shared<VertexBuffer>();
-	_vertexBuffer->Create(_geometry->GetVertices()); 
+	_vertexBuffer->Create(_geometry->GetVertices());
 
 	_indexBuffer = make_shared<IndexBuffer>();
 	_indexBuffer->Create(_geometry->GetIndices());
-
 }
 
 void QuadDemo::Update()
@@ -29,9 +28,7 @@ void QuadDemo::Render()
 
 	DC->IASetVertexBuffers(0, 1, _vertexBuffer->GetComPtr().GetAddressOf(), &stride, &offset);
 	DC->IASetIndexBuffer(_indexBuffer->GetComPtr().Get(), DXGI_FORMAT_R32_UINT, 0);
-	
-	//_shader->draw() 해당 함수는 buffer만 있을때. index가 있을때는 아래 함수 이용해서 그려야함.
+
+	//_shader->Draw(1, 0, 3);
 	_shader->DrawIndexed(0, 1, _indexBuffer->GetCount(), 0, 0);
 }
-//기존 vertex, vertex buffer
-//-> indexbuffer, vertexcolor, vertexbuffer

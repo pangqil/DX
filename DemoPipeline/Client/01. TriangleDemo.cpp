@@ -32,4 +32,3 @@ void TriangleDemo::Render()
 	//_buffer->GetCount()
 	_shader->Draw(1, 0, 3);
 }
-//Shader 객체 생성 -> vertices 3개 정점 좌표 설정 -> vertex담는 buffer 생성 -> buffercreate(verti)

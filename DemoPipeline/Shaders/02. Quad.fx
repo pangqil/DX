@@ -2,32 +2,32 @@
 struct VertexInput
 {
 	float4 position : POSITION;
-    float4 color : COLOR;
+	float4 color : COLOR;
 };
 
 struct VertexOutput
 {
 	float4 position : SV_POSITION;
-    float4 color : COLOR;
+	float4 color : COLOR;
 };
 
 VertexOutput VS(VertexInput input)
 {
 	VertexOutput output;
 	output.position = input.position;
-    output.color = input.color;
-	
+	output.color = input.color;
+
 	return output;
 }
 
 float4 PS(VertexOutput input) : SV_TARGET
 {
-    return input.color;
+	return input.color;
 }
 
 RasterizerState FillModeWireFrame
 {
-    FillMode = Wireframe;
+	FillMode = Wireframe;
 };
 
 technique11 T0
@@ -40,9 +40,8 @@ technique11 T0
 
 	pass P1
 	{
-        SetRasterizerState(FillModeWireFrame);
+		SetRasterizerState(FillModeWireFrame);
 		SetVertexShader(CompileShader(vs_5_0, VS()));
 		SetPixelShader(CompileShader(ps_5_0, PS()));
 	}
 };
-
