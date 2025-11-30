@@ -92,9 +92,7 @@
     <FxCompile Include="..\Shaders\11. Lighting_Specular.fx" />
     <FxCompile Include="..\Shaders\12. Lighting_Emissive.fx" />
     <FxCompile Include="..\Shaders\13. Lighting.fx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Heelo\" />
+    <FxCompile Include="..\Shaders\14. NormalMapping.fx" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

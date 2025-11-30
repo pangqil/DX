@@ -1,5 +1,21 @@
-C:\Users\jaehyuck\RiderProjects\C++\GameCode\Client\02. QuadDemo.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\02. QuadDemo.obj
-C:\Users\jaehyuck\RiderProjects\C++\GameCode\Client\03. ConstBufferDemo.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\03. ConstBufferDemo.obj
-C:\Users\jaehyuck\RiderProjects\C++\GameCode\Client\Main.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\Main.obj
-C:\Users\jaehyuck\RiderProjects\C++\GameCode\Client\pch.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\pch.obj
-C:\Users\jaehyuck\RiderProjects\C++\GameCode\Client\01. TriangleDemo.cpp;C:\Users\jaehyuck\RiderProjects\C++\GameCode\Intermediate\Debug\01. TriangleDemo.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\02. QuadDemo.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\02. QuadDemo.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\03. ConstBufferDemo.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\03. ConstBufferDemo.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\04. CameraDemo.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\04. CameraDemo.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\05. TextureDemo.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\05. TextureDemo.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\06. SamplerDemo.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\06. SamplerDemo.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\07. HeightMapDemo.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\07. HeightMapDemo.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\08. NormalDemo.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\08. NormalDemo.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\09. MeshDemo.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\09. MeshDemo.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\10. GlobalTestDemo.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\10. GlobalTestDemo.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\11. DepthStencilDemo.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\11. DepthStencilDemo.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\12. AmbientDemo.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\12. AmbientDemo.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\13. DiffuseDemo.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\13. DiffuseDemo.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\14. SpecularDemo.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\14. SpecularDemo.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\15. EmissiveDemo.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\15. EmissiveDemo.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\16. LightingDemo.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\16. LightingDemo.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\17. MaterialDemo.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\17. MaterialDemo.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\18. NormalMappingDemo.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\18. NormalMappingDemo.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\CameraScript.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\CameraScript.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\Main.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\Main.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\pch.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\pch.obj
+C:\Users\jaehyuck\Desktop\Renderer\Client\01. TriangleDemo.cpp;C:\Users\jaehyuck\Desktop\Renderer\Intermediate\Debug\01. TriangleDemo.obj

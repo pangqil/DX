@@ -25,7 +25,8 @@ float4 PS(MeshOutput input) : SV_TARGET
 	//float3 R = reflect(LightDir, input.normal);
 	float3 R = LightDir - (2 * input.normal * dot(LightDir, input.normal));
 	R = normalize(R);
-
+	//dot(L,N)는 입사각이 법선에 대해 크기적으로 얼마나 기울어져있는가?
+	//
 	float3 cameraPosition = -V._41_42_43;
 	float3 E = normalize(cameraPosition - input.worldPosition);
 

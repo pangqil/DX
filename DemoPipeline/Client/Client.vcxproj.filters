@@ -205,5 +205,8 @@
     <FxCompile Include="..\Shaders\00. Light.fx">
       <Filter>Shaders\Common</Filter>
     </FxCompile>
+    <FxCompile Include="..\Shaders\14. NormalMapping.fx">
+      <Filter>Shaders\Week2</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>

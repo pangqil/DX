@@ -1,3 +1,6 @@
 /DXGameCode/DXGameCode
 *.ipch
 /RenderingPipeline/x64
+*.cso
+/DemoPipeline/Intermediate
+/DemoPipeline/Intermediate/Debug

@@ -67,7 +67,7 @@ void MaterialDemo::Init()
 
 		_obj2->GetMeshRenderer()->SetMaterial(material);
 	}
-
+	//object2의 경우 clone을 해서 또다른 material, 그러니까 instance를 만들었다.
 	RENDER->Init(_shader);
 }
 

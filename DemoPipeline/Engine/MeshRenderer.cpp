@@ -4,6 +4,7 @@
 #include "Game.h"
 #include "Mesh.h"
 #include "Shader.h"
+#include "Material.h"
 
 MeshRenderer::MeshRenderer() : Super(ComponentType::MeshRenderer)
 {
@@ -17,8 +18,11 @@ MeshRenderer::~MeshRenderer()
 
 void MeshRenderer::Update()
 {
-	if (_mesh == nullptr || _texture == nullptr || _shader == nullptr)
+	if (_mesh == nullptr || _material==nullptr)
 		return;
+
+	auto shader = _material->GetShader();
+	if (shader == nullptr) return;
 
 	auto world = GetTransform()->GetWorldMatrix();
 	_shader->GetMatrix("World")->SetMatrix((float*)&world);

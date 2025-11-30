@@ -26,11 +26,11 @@ public:
 	Component(ComponentType type);
 	virtual ~Component();
 
-	virtual void Awake() {}
-	virtual void Start() {}
-	virtual void Update() {}
-	virtual void LateUpdate() {}
-	virtual void FixedUpdate() {}
+	virtual void Awake() { }
+	virtual void Start() { }	
+	virtual void Update() { }
+	virtual void LateUpdate() { }
+	virtual void FixedUpdate() { }
 
 public:
 	ComponentType GetType() { return _type; }

@@ -23,7 +23,6 @@ public:
 	}
 	// 버퍼는 desc, Memory, Usage, Flags, ByteWidth, Access를 인자로 가진다.
 	// hr은 디바이스에 버퍼를 만들었는지에 대한 성공 여부를 판별하는 플래그다.
-	//
 	void CopyData(const T& data)
 	{
 		D3D11_MAPPED_SUBRESOURCE subResource;
