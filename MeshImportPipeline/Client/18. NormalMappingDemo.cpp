@@ -84,7 +84,7 @@ void NormalMappingDemo::Update()
 		lightDesc.specular = Vec4(0.f);
 		lightDesc.emissive = Vec4(1.f, 0.f, 0.f, 1.f);
 		lightDesc.direction = Vec3(1.f, 0.f, 1.f);
-		RENDER->PushLightData(lightDesc);
+		RENDER->PushLightData(lightDesc);//?
 	}
 
 	{
