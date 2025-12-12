@@ -41,6 +41,22 @@ ModelRenderer::~ModelRenderer()
 
 void ModelRenderer::Update()
 {
+	
+}
+
+void ModelRenderer::SetModel(shared_ptr<Model> model)
+{
+	_model = model;
+
+	const auto& materials = _model->GetMaterials();
+	for (auto& material : materials)
+	{
+		material->SetShader(_shader);
+	}
+}
+
+void ModelRenderer::RenderInstancing(shared_ptr<class InstancingBuffer>& buffer)
+{
 	if (_model == nullptr)
 		return;
 
@@ -68,6 +84,11 @@ void ModelRenderer::Update()
 		// BoneIndex
 		_shader->GetScalar("BoneIndex")->SetInt(mesh->boneIndex);
 
+		//IA
+		mesh->vertexBuffer->PushData();
+		mesh->indexBuffer->PushData();
+		buffer->PushData();
+		_shader->DrawIndexedInstanced(0,_pass,mesh->indexBuffer->GetCount(), buffer->GetCount());
 		uint32 stride = mesh->vertexBuffer->GetStride();
 		uint32 offset = mesh->vertexBuffer->GetOffset();
 
@@ -78,13 +99,7 @@ void ModelRenderer::Update()
 	}
 }
 
-void ModelRenderer::SetModel(shared_ptr<Model> model)
+InstanceID ModelRenderer::GetInstanceID()
 {
-	_model = model;
-
-	const auto& materials = _model->GetMaterials();
-	for (auto& material : materials)
-	{
-		material->SetShader(_shader);
-	}
+	return make_pair((uint64)_model.get(), (uint64)_shader.get());
 }

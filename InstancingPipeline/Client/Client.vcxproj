@@ -28,6 +28,11 @@
     <ClInclude Include="16. LightingDemo.h" />
     <ClInclude Include="17. MaterialDemo.h" />
     <ClInclude Include="18. NormalMappingDemo.h" />
+    <ClInclude Include="19. InstancingDemo.h" />
+    <ClInclude Include="20. MeshInstancingDemo.h" />
+    <ClInclude Include="21. ModelInstancingDemo.h" />
+    <ClInclude Include="22. AnimInstancingDemo.h" />
+    <ClInclude Include="23. RenderDemo.h" />
     <ClInclude Include="CameraScript.h" />
     <ClInclude Include="InstancingDemo.h" />
     <ClInclude Include="Main.h" />
@@ -43,6 +48,11 @@
     <ClCompile Include="16. LightingDemo.cpp" />
     <ClCompile Include="17. MaterialDemo.cpp" />
     <ClCompile Include="18. NormalMappingDemo.cpp" />
+    <ClCompile Include="19. InstancingDemo.cpp" />
+    <ClCompile Include="20. MeshInstancingDemo.cpp" />
+    <ClCompile Include="21. ModelInstancingDemo.cpp" />
+    <ClCompile Include="22. AnimInstancingDemo.cpp" />
+    <ClCompile Include="23. RenderDemo.cpp" />
     <ClCompile Include="CameraScript.cpp" />
     <ClCompile Include="InstancingDemo.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -52,7 +62,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="..\..\B-07)+Quaternion\Shaders\19. InstancingDemo.fx" />
+    <FxCompile Include="..\Shaders\00. Render.fx" />
     <FxCompile Include="..\Shaders\00. Global.fx" />
     <FxCompile Include="..\Shaders\00. Light.fx" />
     <FxCompile Include="..\Shaders\01. Triangle.fx">
@@ -82,6 +92,10 @@
     <FxCompile Include="..\Shaders\16. AnimationDemo.fx" />
     <FxCompile Include="..\Shaders\17. TweenDemo.fx" />
     <FxCompile Include="..\Shaders\18. SkyDemo.fx" />
+    <FxCompile Include="..\Shaders\19. InstancingDemo.fx" />
+    <FxCompile Include="..\Shaders\20. MeshInstancingDemo.fx" />
+    <FxCompile Include="..\Shaders\21. ModelInstancingDemo.fx" />
+    <FxCompile Include="..\Shaders\22. AnimInstancingDemo.fx" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

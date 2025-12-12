@@ -12,7 +12,9 @@
 #include <vector>
 #include <list>
 #include <map>
-#include <unordered_map>
+#include <set> //RedTree(O(N))
+#include <unordered_map>//hash기반(O(1))
+#include <unordered_set>
 #include <algorithm>
 using namespace std;
 
@@ -67,6 +69,7 @@ using namespace Microsoft::WRL;
 #include "ResourceManager.h"
 #include "RenderManager.h"
 #include "ImGuiManager.h"
+#include "InstancingManager.h"
 
 // Engine
 #include "VertexData.h"
