@@ -31,9 +31,10 @@ void HeightMapDemo::Init()
 		{
 			for (int32 x = 0; x < width; x++)
 			{
-				int32 idx = width * z + x;
-				uint8 height = pixelBuffer[idx] / 255.f * 25.f;
-				v[idx].position.y = height; // 높이 보정
+				int32 pixelIdx = width * z + x;
+				int32 vertexIdx = (width + 1) * z + x;
+				float h = pixelBuffer[pixelIdx] / 255.f * 25.f;
+				v[vertexIdx].position.y = h; // 높이 보정
 			}
 		}
 	}

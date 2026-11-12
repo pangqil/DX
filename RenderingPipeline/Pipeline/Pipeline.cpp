@@ -59,10 +59,10 @@ void Pipeline::SetTexture(uint32 slot, uint32 scope, shared_ptr<Texture> texture
 void Pipeline::SetSamplerState(uint32 slot, uint32 scope, shared_ptr<SamplerState> samplerState)
 {
 	if (scope & SS_VertexShader)
-		_deviceContext->VSSetSamplers(0, 1, samplerState->GetComPtr().GetAddressOf());
+		_deviceContext->VSSetSamplers(slot, 1, samplerState->GetComPtr().GetAddressOf());
 
 	if (scope & SS_PixelShader)
-		_deviceContext->PSSetSamplers(0, 1, samplerState->GetComPtr().GetAddressOf());
+		_deviceContext->PSSetSamplers(slot, 1, samplerState->GetComPtr().GetAddressOf());
 }
 
 void Pipeline::Draw(uint32 vertexCount, uint32 startVertexLocation)

@@ -374,13 +374,17 @@ shared_ptr<asAnimationNode> Converter::ParseAnimationNode(shared_ptr<asAnimation
 	{
 		asKeyframeData frameData;
 
+		const uint32 posIndex = (k < srcNode->mNumPositionKeys) ? k : srcNode->mNumPositionKeys - 1;
+		const uint32 rotIndex = (k < srcNode->mNumRotationKeys) ? k : srcNode->mNumRotationKeys - 1;
+		const uint32 sclIndex = (k < srcNode->mNumScalingKeys) ? k : srcNode->mNumScalingKeys - 1;
+
 		bool found = false;
 		uint32 t = node->keyframe.size();
 
 		// Position
-		if (::fabsf((float)srcNode->mPositionKeys[k].mTime - (float)t) <= 0.0001f)
+		if (srcNode->mNumPositionKeys > 0 && ::fabsf((float)srcNode->mPositionKeys[posIndex].mTime - (float)t) <= 0.0001f)
 		{
-			aiVectorKey key = srcNode->mPositionKeys[k];
+			aiVectorKey key = srcNode->mPositionKeys[posIndex];
 			frameData.time = (float)key.mTime;
 			::memcpy_s(&frameData.translation, sizeof(Vec3), &key.mValue, sizeof(aiVector3D));
 
@@ -388,9 +392,9 @@ shared_ptr<asAnimationNode> Converter::ParseAnimationNode(shared_ptr<asAnimation
 		}
 
 		// Rotation
-		if (::fabsf((float)srcNode->mRotationKeys[k].mTime - (float)t) <= 0.0001f)
+		if (srcNode->mNumRotationKeys > 0 && ::fabsf((float)srcNode->mRotationKeys[rotIndex].mTime - (float)t) <= 0.0001f)
 		{
-			aiQuatKey key = srcNode->mRotationKeys[k];
+			aiQuatKey key = srcNode->mRotationKeys[rotIndex];
 			frameData.time = (float)key.mTime;
 
 			frameData.rotation.x = key.mValue.x;
@@ -402,9 +406,9 @@ shared_ptr<asAnimationNode> Converter::ParseAnimationNode(shared_ptr<asAnimation
 		}
 
 		// Scale
-		if (::fabsf((float)srcNode->mScalingKeys[k].mTime - (float)t) <= 0.0001f)
+		if (srcNode->mNumScalingKeys > 0 && ::fabsf((float)srcNode->mScalingKeys[sclIndex].mTime - (float)t) <= 0.0001f)
 		{
-			aiVectorKey key = srcNode->mScalingKeys[k];
+			aiVectorKey key = srcNode->mScalingKeys[sclIndex];
 			frameData.time = (float)key.mTime;
 			::memcpy_s(&frameData.scale, sizeof(Vec3), &key.mValue, sizeof(aiVector3D));
 

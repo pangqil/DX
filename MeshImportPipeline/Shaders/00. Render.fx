@@ -28,7 +28,7 @@ MeshOutput VS_Mesh(VertexMesh input)
 	output.worldPosition = output.position;
 	output.position = mul(output.position, VP);
 	output.uv = input.uv;
-	output.normal = input.normal;
+	output.normal = mul(input.normal, (float3x3)input.world);
 
 	return output;
 }
@@ -64,7 +64,7 @@ MeshOutput VS_Model(VertexModel input)
 	output.worldPosition = output.position;
 	output.position = mul(output.position, VP);
 	output.uv = input.uv;
-	output.normal = input.normal;
+	output.normal = mul(input.normal, (float3x3)input.world);
 
 	return output;
 }

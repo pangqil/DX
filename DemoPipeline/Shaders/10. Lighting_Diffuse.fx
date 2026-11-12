@@ -23,7 +23,7 @@ float4 PS(VertexOutput input) : SV_TARGET
 {
 	float4 color = DiffuseMap.Sample(LinearSampler, input.uv);
 	
-	float value = dot(-LightDir, normalize(input.normal));
+	float value = saturate(dot(normalize(-LightDir), normalize(input.normal)));
 	color = color * value * LightDiffuse * MaterialDiffuse;
 
 	return color;

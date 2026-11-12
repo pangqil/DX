@@ -67,14 +67,16 @@ float4 ComputeLight(float3 normal, float2 uv, float3 worldPosition)
 	// Diffuse
 	{
 		float4 color = DiffuseMap.Sample(LinearSampler, uv);
-		float value = dot(-GlobalLight.direction, normalize(normal));
+		float value = saturate(dot(normalize(-GlobalLight.direction), normalize(normal)));
 		diffuseColor = color * value * GlobalLight.diffuse * Material.diffuse;
 	}
 
 	// Specular
 	{
 		//float3 R = reflect(GlobalLight.direction, normal);
-		float3 R = GlobalLight.direction - (2 * normal * dot(GlobalLight.direction, normal));
+		float3 L = normalize(GlobalLight.direction);
+		float3 N = normalize(normal);
+		float3 R = L - (2 * N * dot(L, N));
 		R = normalize(R);
 
 		float3 cameraPosition = CameraPosition();
@@ -91,7 +93,7 @@ float4 ComputeLight(float3 normal, float2 uv, float3 worldPosition)
 		float3 cameraPosition = CameraPosition();
 		float3 E = normalize(cameraPosition - worldPosition);
 
-		float value = saturate(dot(E, normal));
+		float value = saturate(dot(E, normalize(normal)));
 		float emissive = 1.0f - value;
 
 		// min, max, x

@@ -3,6 +3,7 @@
 
 
 ShaderBase::ShaderBase(ComPtr<ID3D11Device> device)
+    : _device(device)
 {
 }
 

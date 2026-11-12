@@ -40,7 +40,7 @@ VS_OUT VS(VS_IN input)
 	output.worldPosition = output.position;
 	output.position = mul(output.position, VP);
 	output.uv = input.uv;
-	output.normal = input.normal;
+	output.normal = mul(input.normal, (float3x3)input.world);
 
 	return output;
 }

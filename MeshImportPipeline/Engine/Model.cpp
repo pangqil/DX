@@ -23,7 +23,7 @@ void Model::ReadMaterial(wstring filename)
 	wstring fullPath = _texturePath + filename + L".xml";
 	auto parentPath = filesystem::path(fullPath).parent_path();
 
-	tinyxml2::XMLDocument* document = new tinyxml2::XMLDocument();
+	shared_ptr<tinyxml2::XMLDocument> document = make_shared<tinyxml2::XMLDocument>();
 	tinyxml2::XMLError error = document->LoadFile(Utils::ToString(fullPath).c_str());
 	assert(error == tinyxml2::XML_SUCCESS);
 

@@ -32,7 +32,7 @@ void Pass::DrawIndexedInstanced(UINT indexCountPerInstance, UINT instanceCount, 
 {
 	BeginDraw();
 	{
-		DC->DrawIndexedInstanced(indexCountPerInstance, instanceCount, startIndexLocation, baseVertexLocation, startIndexLocation);
+		DC->DrawIndexedInstanced(indexCountPerInstance, instanceCount, startIndexLocation, baseVertexLocation, startInstanceLocation);
 	}
 	EndDraw();
 }

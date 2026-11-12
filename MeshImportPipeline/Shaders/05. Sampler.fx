@@ -66,7 +66,7 @@ float4 PS(VertexOutput input) : SV_TARGET
 		return Texture0.Sample(SamplerAddressMirror, input.uv);
 	
 	if (Address == 2)
-		return Texture0.Sample(SamplerAddressWrap, input.uv);
+		return Texture0.Sample(SamplerAddressClamp, input.uv);
 	
 	if (Address == 3)
 		return Texture0.Sample(SamplerAddressBorder, input.uv);

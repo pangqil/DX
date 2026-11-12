@@ -17,14 +17,14 @@ VS_OUT VS(VertexTextureNormalTangent input)
 	float4 clipSpacePos = mul(viewPos, P);
 	output.position = clipSpacePos.xyzw;
 	output.position.z = output.position.w * 0.999999f;
-    //0.99인 이유는 D3D11_COMPARISON_LESS_EQUAL에 따라 1보다 작으면 렌더링 하지 않음.
+    //0.999999인 이유는 기본 깊이 비교가 D3D11_COMPARISON_LESS라서, z/w가 정확히 1(먼 평면 = 깊이 버퍼 초기값)이면 테스트를 통과하지 못하기 때문. 1보다 조금 작은 값을 써서 가장 먼 곳에 그려지게 함.
 	output.uv = input.uv;
 
 	return output;
 }
 //ViewSpace의 Z축은 항상 카메라의 LookVector다. 즉 Z는 오브젝트와 카메라 거리. 
 // V-> Projection 변환을 하는 과정에 두 행렬의 곱 뿐만 아니라 Z를 W에 저장한다
-//P행렬을 곱하면서, W가 단순히 0과 1이 아닌, 깊이정보(-Z)로 변한다.
+//P행렬을 곱하면서, W가 단순히 0과 1이 아닌, 깊이정보(뷰 공간 +Z)로 변한다. (왼손 좌표계 PerspectiveFovLH 기준)
 //MVP를 통해 투영변환을 하면 Clipspace가 나온다. 이를 w로 나누면 비로소 NDC가 되는것이다.
 float4 PS(VS_OUT input) : SV_TARGET
 {

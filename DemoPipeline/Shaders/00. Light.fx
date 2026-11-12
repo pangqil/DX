@@ -76,14 +76,16 @@ float4 ComputeLight(float3 normal, float2 uv, float3 worldPosition)
 	// Diffuse -> 표면법선과 빛을 내적한 값 value. 그리고 diffuse(mat, light), color, value 전부곱
 	{//빛이 표면에 반사되는 정도이며 또 다르게는 어떤 비율로 빛을 받아들일 것인가.
 		float4 color = DiffuseMap.Sample(LinearSampler, uv);
-		float value = dot(-GlobalLight.direction, normalize(normal));
+		float value = saturate(dot(normalize(-GlobalLight.direction), normalize(normal)));
 		diffuseColor = color * value * GlobalLight.diffuse * Material.diffuse;
 	}
 
 	// Specular -> 눈뽕에 대한 조절. 표면에 반사되어 들어온 빛이 눈에 어느정도의 영향을 끼치는가
 	{//반사광을 측정 이것을 r이라고 했을떄 R과 camera의 내적하고 0~1로 clamp하고 pow10
 		//float3 R = reflect(GlobalLight.direction, normal);
-		float3 R = GlobalLight.direction - (2 * normal * dot(GlobalLight.direction, normal));
+		float3 L = normalize(GlobalLight.direction);
+		float3 N = normalize(normal);
+		float3 R = L - (2 * N * dot(L, N));
 		R = normalize(R);
 
 		float3 cameraPosition = CameraPosition();
@@ -100,7 +102,7 @@ float4 ComputeLight(float3 normal, float2 uv, float3 worldPosition)
 		float3 cameraPosition = CameraPosition();
 		float3 E = normalize(cameraPosition - worldPosition);
 
-		float value = saturate(dot(E, normal));
+		float value = saturate(dot(E, normalize(normal)));
 		float emissive = 1.0f - value;
 
 		// min, max, x

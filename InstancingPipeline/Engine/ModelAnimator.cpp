@@ -184,7 +184,7 @@ void ModelAnimator::Update()
 
 			float timePerFrame = 1.f / (nextAnim->frameRate * desc.next.speed);
 
-			if (desc.next.ratio >= 1.f)
+			if (desc.next.sumTime >= timePerFrame)
 			{
 				desc.next.sumTime = 0;
 
@@ -339,10 +339,14 @@ void ModelAnimator::CreateAnimationTransform(uint32 index)
 	vector<Matrix> tempAnimBoneTransforms(MAX_MODEL_TRANSFORMS, Matrix::Identity);
 
 	shared_ptr<ModelAnimation> animation = _model->GetAnimationByIndex(index);
+	assert(animation->frameCount <= MAX_MODEL_KEYFRAMES);
+	assert(_model->GetBoneCount() <= MAX_MODEL_TRANSFORMS);
+	const uint32 frameCount = (std::min)(animation->frameCount, (uint32)MAX_MODEL_KEYFRAMES);
+	const uint32 boneCount = (std::min)(_model->GetBoneCount(), (uint32)MAX_MODEL_TRANSFORMS);
 
-	for (uint32 f = 0; f < animation->frameCount; f++)
+	for (uint32 f = 0; f < frameCount; f++)
 	{
-		for (uint32 b = 0; b < _model->GetBoneCount(); b++)
+		for (uint32 b = 0; b < boneCount; b++)
 		{
 			shared_ptr<ModelBone> bone = _model->GetBoneByIndex(b);
 

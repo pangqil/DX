@@ -57,7 +57,7 @@ void InstancingManager::RenderMeshRenderer(vector<shared_ptr<GameObject>>& gameO
 
             //그려줄 애를 하나만 일단 그려야함.
             shared_ptr<InstancingBuffer>& buffer = _buffers[instanceId];
-            vec[0]->GetModelRenderer()->RenderInstancing(buffer);
+            vec[0]->GetMeshRenderer()->RenderInstancing(buffer);
         }
     }
 }
@@ -105,7 +105,7 @@ void InstancingManager::RenderModelRenderer(vector<shared_ptr<GameObject>>& game
 
 void InstancingManager::AddData(InstanceID instanceId, InstancingData& data)
 {
-    if (_buffers.find(instanceID)==_buffers.end())
-        _buffers[instanceID]=make_shared<InstancingBuffer>();
-    _buffers[instanceID]->AddData(data);
+    if (_buffers.find(instanceId)==_buffers.end())
+        _buffers[instanceId]=make_shared<InstancingBuffer>();
+    _buffers[instanceId]->AddData(data);
 }
